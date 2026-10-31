@@ -1,0 +1,511 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'sha256-H6md+IPUXNxeGkJo8bCZhJrEPaxbBWLSk/Ezc9BR9rc=' https://challenges.cloudflare.com https://hcaptcha.com https://*.hcaptcha.com; style-src 'self' 'unsafe-inline' https://hcaptcha.com https://*.hcaptcha.com; img-src 'self' data: blob:; font-src 'self' data:; media-src 'self' blob:; connect-src 'self' data: blob: https://ofuobedkvfosdqygmlvj.supabase.co wss://ofuobedkvfosdqygmlvj.supabase.co https://challenges.cloudflare.com https://hcaptcha.com https://*.hcaptcha.com; frame-src https://challenges.cloudflare.com https://hcaptcha.com https://*.hcaptcha.com; worker-src 'self' blob:; manifest-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#0E1018" />
+    <!-- Installable web app (manifest + icons are injected by vite.config.ts pwaHead with the base path). -->
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="REALMSHARD" />
+    <meta name="application-name" content="REALMSHARD" />
+    <!-- The Content-Security-Policy <meta> is added at build time, after <meta charset>
+         (vite.config.ts contentSecurityPolicy: it hashes the watchdog script below). -->
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+    <title>REALMSHARD</title>
+    <!-- Link previews (Discord, WhatsApp, X…): absolute URLs of the published site. -->
+    <meta name="description" content="Jeu de cartes et roguelike en pixel art dans les royaumes d’Albion, de Midgard et d’Hibernia : duels contre l’IA ou entre amis, mode Histoire, collection et decks. Bêta ouverte, jouable gratuitement dans le navigateur." />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="REALMSHARD" />
+    <meta property="og:locale" content="fr_FR" />
+    <meta property="og:url" content="https://xavfrech-dev.github.io/realmshard/" />
+    <meta property="og:title" content="REALMSHARD — bêta ouverte" />
+    <meta property="og:description" content="Duels de cartes et mode Histoire en pixel art dans les royaumes d’Albion, de Midgard et d’Hibernia. Bêta ouverte, jouable gratuitement dans le navigateur." />
+    <meta property="og:image" content="https://xavfrech-dev.github.io/realmshard/og-image.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Les trois royaumes d’Albion, de Midgard et d’Hibernia sous la couronne brisée, en pixel art." />
+    <meta name="twitter:card" content="summary_large_image" />
+    <style>
+      :root {
+        color-scheme: dark;
+        --bg: #0a0c12;
+        --fg: #e8dcbe;
+        --accent: #e4c16a;
+        --panel: #2a2d3a;
+      }
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+        background: var(--bg);
+        color: var(--fg);
+        font-family: 'Segoe UI', system-ui, sans-serif;
+        overflow: hidden;
+        width: 100%;
+        height: 100%;
+        user-select: none;
+        -webkit-user-select: none;
+      }
+      /* Inside the safe area (notch / rounded corners with viewport-fit=cover;
+         every inset is 0 on desktops and phones without a cutout). The
+         renderer sizes the canvas from #app's client size. */
+      #app {
+        position: fixed;
+        top: env(safe-area-inset-top, 0px);
+        right: env(safe-area-inset-right, 0px);
+        bottom: env(safe-area-inset-bottom, 0px);
+        left: env(safe-area-inset-left, 0px);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: var(--bg);
+      }
+      /* « Utiliser tout l'écran » (render/upscaler.ts): edge to edge, under the
+         notch too — the renderer keeps the HUD inside the insets itself. */
+      html.rs-fullview #app {
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+      }
+      #app canvas {
+        max-width: 100vw;
+        max-height: 100vh;
+        width: auto;
+        height: auto;
+        object-fit: contain;
+        display: block;
+        image-rendering: pixelated;
+        image-rendering: crisp-edges;
+      }
+      /* Profile overlay (F3) */
+      #profile-overlay {
+        position: fixed;
+        top: 8px;
+        left: 8px;
+        background: rgba(0, 0, 0, 0.7);
+        color: #c9f26b;
+        font-family: 'Consolas', 'Courier New', monospace;
+        font-size: 11px;
+        padding: 6px 10px;
+        line-height: 1.4;
+        pointer-events: none;
+        z-index: 999;
+        white-space: pre;
+      }
+      #profile-overlay.hidden {
+        display: none;
+      }
+      /* Scaling info badge */
+      #scaling-badge {
+        position: fixed;
+        bottom: 8px;
+        right: 8px;
+        background: rgba(0, 0, 0, 0.55);
+        color: var(--accent);
+        font-family: 'Consolas', monospace;
+        font-size: 11px;
+        padding: 4px 8px;
+        pointer-events: none;
+        z-index: 998;
+      }
+      #scaling-badge.hidden {
+        display: none;
+      }
+      /* Hint chip */
+      #hint-chip {
+        position: fixed;
+        bottom: 8px;
+        left: 8px;
+        background: rgba(0, 0, 0, 0.55);
+        color: var(--fg);
+        font-family: 'Alegreya Sans', sans-serif;
+        font-size: 12px;
+        padding: 4px 8px;
+        pointer-events: none;
+        z-index: 997;
+      }
+      /* Keyboard hints mean nothing on a phone, and the chip sat on buttons. */
+      html.mobile-ui #hint-chip {
+        display: none !important;
+      }
+      /* Boot / loading screen (src/render/bootScreen.ts): pure DOM so it
+         shows before the scripts and images arrive. */
+      #boot {
+        position: fixed;
+        inset: 0;
+        z-index: 1000;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: radial-gradient(ellipse at 50% 40%, #1b1f30 0%, #0a0c12 70%);
+        transition: opacity 0.4s ease;
+      }
+      #boot-bg {
+        position: absolute;
+        inset: 0;
+        background-size: cover;
+        background-position: center;
+        image-rendering: pixelated;
+        opacity: 0;
+        transition: opacity 0.8s ease;
+      }
+      #boot-bg::after {
+        content: '';
+        position: absolute;
+        inset: 0;
+        background: radial-gradient(ellipse at 50% 50%, rgba(10, 12, 18, 0.35) 0%, rgba(10, 12, 18, 0.85) 75%);
+      }
+      #boot .boot-inner {
+        position: relative;
+        width: min(560px, calc(100vw - 32px));
+        text-align: center;
+      }
+      #boot-logo {
+        font-family: 'Cinzel Decorative', 'Trajan Pro', 'Palatino Linotype', Georgia, serif;
+        font-weight: 900;
+        font-size: clamp(36px, 8vw, 68px);
+        letter-spacing: 0.04em;
+        color: #f2d27a;
+        text-shadow: 0 0 18px rgba(228, 193, 106, 0.45), 0 3px 0 #5a3d12, 0 6px 14px #000;
+        line-height: 1;
+      }
+      #boot-sub {
+        margin: 10px 0 34px;
+        font-family: Georgia, serif;
+        font-style: italic;
+        font-size: clamp(13px, 2.6vw, 17px);
+        color: #cdbd96;
+      }
+      #boot-bar {
+        height: 14px;
+        border: 2px solid #8a6a2a;
+        border-radius: 3px;
+        background: #12141c;
+        box-shadow: 0 0 0 2px #1c1408, inset 0 2px 6px #000;
+        overflow: hidden;
+      }
+      #boot-fill {
+        width: 2%;
+        height: 100%;
+        background: linear-gradient(180deg, #ffe7a0 0%, #e4c16a 45%, #a87a2a 100%);
+        box-shadow: 0 0 10px rgba(255, 216, 120, 0.6);
+        transition: width 0.25s ease-out;
+      }
+      #boot-pct {
+        margin-top: 10px;
+        font-family: Georgia, serif;
+        font-size: 15px;
+        color: #e8dcbe;
+      }
+      #boot-tip {
+        min-height: 3em;
+        margin-top: 26px;
+        font-family: Georgia, serif;
+        font-size: 14px;
+        line-height: 1.5;
+        color: #a99d82;
+        transition: opacity 0.25s ease;
+      }
+      /* Version choice on the loading screen (src/render/bootScreen.ts). */
+      #boot-mode {
+        margin-top: 18px;
+        font-family: Georgia, serif;
+        color: #e8dcbe;
+      }
+      #boot-mode .boot-mode-q {
+        font-size: 14px;
+        margin-bottom: 8px;
+        color: #f2d27a;
+      }
+      #boot-mode .boot-mode-row {
+        display: flex;
+        gap: 12px;
+        justify-content: center;
+      }
+      #boot-mode button {
+        min-width: 150px;
+        padding: 9px 14px;
+        font-family: inherit;
+        font-size: 15px;
+        font-weight: 700;
+        color: #e8dcbe;
+        background: linear-gradient(#3a2c1e, #1a120a);
+        border: 2px solid #8a6a3a;
+        border-radius: 6px;
+        cursor: pointer;
+        box-shadow: 0 0 0 2px #140a04, 0 4px 10px rgba(0, 0, 0, 0.5);
+      }
+      #boot-mode button small {
+        display: block;
+        font-size: 11px;
+        font-weight: 400;
+        color: #a99d82;
+      }
+      #boot-mode button.on {
+        color: #fff4dc;
+        border-color: #f2d27a;
+        background: linear-gradient(#5a3e1c, #2a1a0a);
+        box-shadow: 0 0 0 2px #140a04, 0 0 14px rgba(242, 210, 122, 0.55);
+      }
+      #boot-mode .boot-lang-row {
+        display: flex;
+        gap: 8px;
+        justify-content: center;
+        margin-top: 10px;
+      }
+      #boot-mode .boot-lang-row button {
+        min-width: 0;
+        padding: 5px 12px;
+        font-size: 13px;
+      }
+      #boot-mode.ask .boot-mode-q {
+        animation: bootAsk 1.2s ease-in-out infinite alternate;
+      }
+      @keyframes bootAsk {
+        from { opacity: 0.6; }
+        to { opacity: 1; }
+      }
+      /* Between scenes: art still streaming (src/render/artPreload.ts). */
+      #art-wait {
+        position: fixed;
+        inset: 0;
+        z-index: 990;
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 12px;
+        background: rgba(6, 8, 12, 0.55);
+      }
+      #art-wait.on {
+        display: flex;
+      }
+      .art-wait-ring {
+        width: 42px;
+        height: 42px;
+        border: 4px solid rgba(228, 193, 106, 0.25);
+        border-top-color: #e4c16a;
+        border-radius: 50%;
+        animation: art-spin 0.9s linear infinite;
+      }
+      .art-wait-label {
+        font-family: Georgia, serif;
+        font-size: 14px;
+        color: #e8dcbe;
+      }
+      /* Mobile mode, portrait: « Tourne ton téléphone » (src/render/touchUi.ts). */
+      #rotate-hint {
+        position: fixed;
+        inset: 0;
+        z-index: 1001;
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 14px;
+        padding: 0 24px;
+        text-align: center;
+        background: radial-gradient(ellipse at 50% 40%, #1b1f30 0%, #0a0c12 70%);
+      }
+      #rotate-hint.on {
+        display: flex;
+      }
+      #rotate-hint .rot-phone {
+        width: 46px;
+        height: 78px;
+        border: 4px solid #e4c16a;
+        border-radius: 9px;
+        box-shadow: 0 0 14px rgba(228, 193, 106, 0.4);
+        animation: rot-turn 2.2s ease-in-out infinite;
+      }
+      #rotate-hint .rot-title {
+        font-family: 'Uncial Antiqua', 'Palatino Linotype', Georgia, serif;
+        font-size: 26px;
+        color: #f2d27a;
+        text-shadow: 0 2px 0 #5a3d12, 0 4px 10px #000;
+      }
+      #rotate-hint .rot-sub {
+        font-family: Georgia, serif;
+        font-size: 15px;
+        color: #cdbd96;
+      }
+      @keyframes rot-turn {
+        0%, 25% { transform: rotate(0deg); }
+        55%, 85% { transform: rotate(-90deg); }
+        100% { transform: rotate(0deg); }
+      }
+      /* Touch devices: no long-press callout / selection / tap flash. */
+      html.mobile-ui, html.mobile-ui body {
+        -webkit-touch-callout: none;
+        -webkit-tap-highlight-color: transparent;
+        overscroll-behavior: none;
+      }
+      #app canvas {
+        touch-action: none;
+      }
+      @keyframes art-spin {
+        to {
+          transform: rotate(360deg);
+        }
+      }
+    </style>
+    <script type="module" crossorigin src="/realmshard/assets/index-DZNoncCo.js"></script>
+    <link rel="modulepreload" crossorigin href="/realmshard/assets/pixi-DPeEOpoI.js">
+    <link rel="modulepreload" crossorigin href="/realmshard/assets/vendor-C8r_Nbax.js">
+    <link rel="modulepreload" crossorigin href="/realmshard/assets/content-BIQkGI4Q.js">
+    <link rel="stylesheet" crossorigin href="/realmshard/assets/index-D2ETncZD.css">
+    <link rel="preload" as="fetch" crossorigin="anonymous" href="/realmshard/art/manifest.json?v=5dc7cf463d">
+    <link rel="preload" as="fetch" crossorigin="anonymous" href="/realmshard/art/ui/skin/index.json?v=5dc7cf463d">
+    <link rel="preload" as="fetch" crossorigin="anonymous" href="/realmshard/art/ui/icons/index.json?v=5dc7cf463d">
+    <link rel="manifest" href="/realmshard/manifest.webmanifest">
+    <link rel="icon" href="/realmshard/icons/favicon-64.png" type="image/png" sizes="64x64">
+    <link rel="apple-touch-icon" href="/realmshard/icons/apple-touch-icon.png" sizes="180x180">
+  </head>
+  <body>
+    <div id="boot">
+      <div id="boot-bg"></div>
+      <div class="boot-inner">
+        <div id="boot-logo">REALMSHARD</div>
+        <div id="boot-bar"><div id="boot-fill"></div></div>
+        <div id="boot-pct">Chargement… 0 %</div>
+        <div id="boot-mode"></div>
+        <div id="boot-tip">Astuce : ton mana augmente d’un cristal par tour, jusqu’à 10.</div>
+      </div>
+    </div>
+    <div id="app"></div>
+    <div id="hint-chip">[Échap] Options</div>
+    <!-- Boot watchdog (plain ES5, runs before the module so it also covers a
+         script that never loads / parses): if the game has not shown its
+         first screen and nothing has moved for a while (the version choice
+         of the first launch excluded), or main() failed, show « Le jeu
+         n'a pas pu démarrer » + the error + Réessayer / Réinitialiser le cache
+         (service worker + caches only: saves in localStorage are kept).
+         « Moved »: the loading bar, or a download finishing (only up to 60 s
+         after the main script ran: background downloads must not hide a
+         stuck main() forever). The limit is 10 s once the main script has
+         run (DOMContentLoaded comes after the module scripts), 25 s before:
+         a slow first download of the big script is not a failure (UX-20).
+         main.ts calls window.__rsBootOk() (first screen up) and
+         window.__rsBootFail(err) (boot rejected). -->
+    <script>
+      (function () {
+        var errs = [];
+        var done = false;
+        var shown = null;
+        var lastPct = '';
+        var lastMove = Date.now();
+        function txt(e) {
+          if (!e) return 'inconnue';
+          if (e.stack) return String(e.stack).slice(0, 600);
+          if (e.message) return String(e.message);
+          return String(e);
+        }
+        window.addEventListener('error', function (ev) {
+          if (done) return;
+          var m = ev && (ev.error ? txt(ev.error) : ev.message);
+          if (!m && ev && ev.target && ev.target.src) m = 'Ressource introuvable : ' + ev.target.src;
+          if (m && m !== 'Script error.') errs.push(m);
+        }, true);
+        window.addEventListener('unhandledrejection', function (ev) {
+          if (!done) errs.push(txt(ev && ev.reason));
+        });
+        function resetCache() {
+          var jobs = [];
+          try {
+            if (navigator.serviceWorker && navigator.serviceWorker.getRegistrations)
+              jobs.push(navigator.serviceWorker.getRegistrations().then(function (rs) {
+                return Promise.all(rs.map(function (r) { return r.unregister(); }));
+              }));
+          } catch (e) {}
+          try {
+            if (window.caches && caches.keys)
+              jobs.push(caches.keys().then(function (ks) {
+                return Promise.all(ks.map(function (k) { return caches.delete(k); }));
+              }));
+          } catch (e) {}
+          var go = function () { location.reload(); };
+          Promise.all(jobs).then(go, go);
+          setTimeout(go, 3000);
+        }
+        function show(extra) {
+          if (done) return;
+          if (extra) errs.push(extra);
+          if (!shown) {
+            shown = document.createElement('div');
+            shown.id = 'boot-error';
+            shown.setAttribute('role', 'alert');
+            shown.style.cssText = 'position:fixed;inset:0;z-index:3000;display:flex;align-items:center;justify-content:center;padding:16px;box-sizing:border-box;background:rgba(10,12,18,.94);color:#e8dcbe;font:15px Georgia,serif;';
+            var box = document.createElement('div');
+            box.style.cssText = 'max-width:560px;width:100%;max-height:100%;overflow:auto;text-align:center;';
+            var h = document.createElement('div');
+            h.textContent = "Le jeu n'a pas pu démarrer";
+            h.style.cssText = 'font-size:22px;color:#e4c16a;margin-bottom:10px;';
+            var pre = document.createElement('pre');
+            pre.id = 'boot-error-msg';
+            pre.style.cssText = 'text-align:left;white-space:pre-wrap;word-break:break-word;font:12px monospace;color:#d98a8a;background:#14161f;padding:8px;border-radius:6px;max-height:40vh;overflow:auto;';
+            var row = document.createElement('div');
+            row.style.cssText = 'display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-top:12px;';
+            var mk = function (label, fn) {
+              var b = document.createElement('button');
+              b.type = 'button';
+              b.textContent = label;
+              b.style.cssText = 'font:16px Georgia,serif;padding:10px 18px;border-radius:6px;border:2px solid #d9a441;background:#2c1d12;color:#f2e6c8;cursor:pointer;';
+              b.addEventListener('click', fn);
+              row.appendChild(b);
+            };
+            mk('Réessayer', function () { location.reload(); });
+            mk('Réinitialiser le cache', resetCache);
+            box.appendChild(h);
+            box.appendChild(pre);
+            box.appendChild(row);
+            shown.appendChild(box);
+            document.body.appendChild(shown);
+          }
+          var msg = errs.length ? errs.slice(-4).join('\n\n') : 'Le chargement ne progresse plus (réseau ou cache bloqué).';
+          document.getElementById('boot-error-msg').textContent = msg + '\n\n' + navigator.userAgent;
+        }
+        window.__rsBootOk = function () {
+          done = true;
+          if (shown) shown.remove();
+        };
+        window.__rsBootFail = function (err) {
+          show(txt(err));
+        };
+        // The main script has run (module scripts execute before DOMContentLoaded).
+        var started = 0;
+        document.addEventListener('DOMContentLoaded', function () {
+          started = Date.now();
+          lastMove = started;
+        });
+        // A download that just finished (script chunk, manifest, image) is progress too,
+        // until 60 s after the main script ran (then only the loading bar counts).
+        try {
+          new PerformanceObserver(function () {
+            var now = Date.now();
+            if (!started || now - started < 60000) lastMove = now;
+          }).observe({ type: 'resource', buffered: false });
+        } catch (e) {}
+        var timer = setInterval(function () {
+          if (done) return clearInterval(timer);
+          var boot = document.getElementById('boot');
+          if (!boot) return;
+          var mode = document.getElementById('boot-mode');
+          var pct = (document.getElementById('boot-fill') || {}).style;
+          var now = Date.now();
+          var p = pct ? pct.width : '';
+          // Waiting on the first-launch version choice is not a failure.
+          // A hidden tab throttles timers: its time doesn't count (audit 03 §1).
+          if (document.hidden || p !== lastPct || (mode && mode.className.indexOf('ask') >= 0) || document.querySelector('.rs-modal')) {
+            lastPct = p;
+            lastMove = now;
+          }
+          if (now - lastMove >= (started ? 10000 : 25000)) show();
+        }, 1000);
+      })();
+    </script>
+  </body>
+</html>

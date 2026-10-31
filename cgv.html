@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>REALMSHARD — Conditions générales de vente</title>
+<style>
+  :root { color-scheme: dark; }
+  body { margin: 0; background: #140c06; color: #f2e6c8; font: 16px/1.55 Georgia, "Times New Roman", serif; }
+  main { max-width: 820px; margin: 0 auto; padding: 24px 16px 64px; }
+  h1 { color: #ffd75a; font-size: 1.6em; margin: 0.4em 0; }
+  h2 { color: #f2d27a; font-size: 1.15em; margin: 1.6em 0 0.4em; }
+  nav { display: flex; gap: 12px; flex-wrap: wrap; margin: 8px 0 24px; }
+  nav a, a { color: #9ae8ff; }
+  section { border-top: 1px solid #5a4020; padding-top: 12px; margin-top: 32px; }
+  .todo { background: #5a1a10; color: #ffe6a8; padding: 0 4px; border-radius: 3px; }
+  .note { color: #c9b98f; font-size: 0.92em; }
+</style>
+</head>
+<body>
+<main>
+<!--
+  Brouillon de CGV (audit n°2, PROD-05) : chaque « [À REMPLIR PAR LE PROPRIÉTAIRE] »
+  doit être complété, puis le texte relu par un juriste AVANT la première vente
+  (docs/PAYMENTS.md § 6). Lié depuis la confirmation d'achat du jeu
+  (src/net/payments.ts cgvUrl : #en / #de selon la langue).
+  Le plafond de 50 € est celui de la fonction `payments` par défaut
+  (PAYMENTS_MONTHLY_CAP_CENTS) : s'il change, changer ce texte aussi. Il ne
+  s'applique qu'aux achats par la fonction, pas aux liens de paiement Stripe
+  (VITE_STRIPE_LINK_*, docs/PAYMENTS.md § 3) : n'en configurez pas tant que
+  ce texte annonce le plafond.
+-->
+<nav>
+  <a href="#fr" hreflang="fr">Français</a>
+  <a href="#en" hreflang="en">English</a>
+  <a href="#de" hreflang="de">Deutsch</a>
+</nav>
+
+<section id="fr" lang="fr">
+<h1>Conditions générales de vente</h1>
+<p class="note">Version du <span class="todo">[À REMPLIR PAR LE PROPRIÉTAIRE : date]</span>. Elles s’appliquent à tout achat fait sur le site du jeu REALMSHARD.</p>
+
+<h2>1. Vendeur</h2>
+<p><span class="todo">[À REMPLIR PAR LE PROPRIÉTAIRE : nom ou raison sociale, forme juridique, adresse, numéro SIRET, numéro de TVA intracommunautaire, adresse e-mail de contact]</span>.</p>
+
+<h2>2. Ce qui est vendu</h2>
+<p>Des contenus numériques du jeu : packs (boosters, Éclats, Or, cosmétiques, carte légendaire au choix), Or, Éclats et l’abonnement « Pass du Royaume ». Le contenu exact de chaque offre est affiché avant l’achat. Les cosmétiques n’ont aucun effet sur le jeu. Les boosters contiennent des cartes tirées au hasard : leurs probabilités exactes sont affichées dans le jeu (bouton « Probabilités »). Rien n’est vendu dans l’application mobile.</p>
+
+<h2>3. Prix et paiement</h2>
+<p>Les prix sont indiqués en euros, toutes taxes comprises. Le paiement est fait par carte via Stripe ; nous ne voyons jamais vos données de carte. Un même compte ne peut pas dépenser plus de 50 € sur 30 jours. Les offres « 1 par compte » ne peuvent être achetées qu’une fois par compte.</p>
+
+<h2>4. Compte et livraison</h2>
+<p>Un compte REALMSHARD avec une adresse e-mail confirmée est nécessaire pour acheter (une session invitée ne peut pas acheter) : l’achat appartient à ce compte. Le contenu est livré immédiatement après le paiement, dans l’emplacement de sauvegarde actif au moment de l’achat (Or, Éclats, boosters, carte légendaire au choix) ; les cosmétiques et le Pass valent pour tout le compte. En cas de problème, le bouton « Restaurer mes achats » relit vos achats.</p>
+
+<h2>5. Droit de rétractation</h2>
+<p>Pour un contenu numérique livré immédiatement, vous demandez expressément cette livraison immédiate et reconnaissez perdre votre droit de rétractation de 14 jours (article L221-28 13° du Code de la consommation). Cet accord est recueilli par une case non pré-cochée avant le paiement et rappelé dans le reçu envoyé par e-mail.</p>
+
+<h2>6. Pass du Royaume (abonnement)</h2>
+<p>4,99 € TTC par mois, sans engagement, renouvelé chaque mois jusqu’à résiliation. Vous pouvez résilier en ligne à tout moment depuis « Gérer / résilier » (portail Stripe) ; les avantages restent jusqu’à la fin du mois payé. Les exclusivités du Pass (dos de carte du mois, cadre et titre de saison) reviennent ensuite en Éclats, 6 mois plus tard, dans les « Archives du Pass ».</p>
+
+<h2>7. Remboursements</h2>
+<p>Écrivez à <span class="todo">[À REMPLIR PAR LE PROPRIÉTAIRE : adresse e-mail du support]</span>. Un achat remboursé ou contesté n’est plus accordé ; ce qui a déjà été dépensé dans le jeu n’est pas retiré. Un achat fait par un mineur sans autorisation est remboursé à la demande de son représentant légal.</p>
+
+<h2>8. Médiation et droit applicable</h2>
+<p>Médiateur de la consommation : <span class="todo">[À REMPLIR PAR LE PROPRIÉTAIRE : nom, adresse et site du médiateur]</span>. Droit français ; les règles protectrices de votre pays de résidence restent applicables.</p>
+
+<h2>9. Données personnelles</h2>
+<p>Voir la <a href="confidentialite.html">politique de confidentialité</a>.</p>
+</section>
+
+<section id="en" lang="en">
+<h1>Terms of Sale</h1>
+<p class="note">Version of <span class="todo">[TO BE FILLED IN BY THE OWNER: date]</span>. They apply to every purchase made on the website of the game REALMSHARD. The French version prevails.</p>
+
+<h2>1. Seller</h2>
+<p><span class="todo">[TO BE FILLED IN BY THE OWNER: name or company name, legal form, address, SIRET number, EU VAT number, contact e-mail]</span>.</p>
+
+<h2>2. What is sold</h2>
+<p>Digital content of the game: packs (boosters, Shards, Gold, cosmetics, a legendary card of your choice), Gold, Shards and the “Realm Pass” subscription. The exact contents of each offer are shown before you buy. Cosmetics have no effect on gameplay. Boosters contain random cards: their exact odds are shown in the game (“Drop rates” button). Nothing is sold in the mobile app.</p>
+
+<h2>3. Prices and payment</h2>
+<p>Prices are in euros, all taxes included. Payment is made by card through Stripe; we never see your card details. One account cannot spend more than €50 over 30 days. “1 per account” offers can be bought once per account.</p>
+
+<h2>4. Account and delivery</h2>
+<p>A REALMSHARD account with a confirmed e-mail address is needed to buy (a guest session cannot buy): the purchase belongs to that account. The content is delivered immediately after payment, into the save slot active at the time of purchase (Gold, Shards, boosters, legendary card of your choice); cosmetics and the Pass apply to the whole account. If anything goes wrong, the “Restore purchases” button reads your purchases again.</p>
+
+<h2>5. Right of withdrawal</h2>
+<p>For digital content delivered immediately, you expressly request that immediate delivery and acknowledge that you lose your 14-day right of withdrawal (French Consumer Code, article L221-28 13°). This consent is collected with an unticked box before payment and repeated in the receipt sent by e-mail.</p>
+
+<h2>6. Realm Pass (subscription)</h2>
+<p>€4.99 per month, VAT included, no commitment, renewed every month until you cancel. You can cancel online at any time from “Manage / cancel” (Stripe portal); the perks last until the end of the paid month. Pass exclusives (the month’s card back, the season frame and title) come back for Shards 6 months later in the “Pass Archives”.</p>
+
+<h2>7. Refunds</h2>
+<p>Write to <span class="todo">[TO BE FILLED IN BY THE OWNER: support e-mail address]</span>. A refunded or disputed purchase is no longer granted; what was already spent in the game is not taken back. A purchase made by a minor without permission is refunded at the request of their legal guardian.</p>
+
+<h2>8. Mediation and applicable law</h2>
+<p>Consumer mediator: <span class="todo">[TO BE FILLED IN BY THE OWNER: mediator’s name, address and website]</span>. French law; the protective rules of your country of residence still apply.</p>
+
+<h2>9. Personal data</h2>
+<p>See the <a href="confidentialite.html">privacy policy</a>.</p>
+</section>
+
+<section id="de" lang="de">
+<h1>Allgemeine Geschäftsbedingungen (AGB)</h1>
+<p class="note">Fassung vom <span class="todo">[VOM EIGENTÜMER AUSZUFÜLLEN: Datum]</span>. Sie gelten für jeden Kauf auf der Website des Spiels REALMSHARD. Maßgeblich ist die französische Fassung.</p>
+
+<h2>1. Verkäufer</h2>
+<p><span class="todo">[VOM EIGENTÜMER AUSZUFÜLLEN: Name oder Firma, Rechtsform, Anschrift, SIRET-Nummer, USt-IdNr., Kontakt-E-Mail]</span>.</p>
+
+<h2>2. Was verkauft wird</h2>
+<p>Digitale Inhalte des Spiels: Pakete (Booster, Splitter, Gold, Kosmetik, eine legendäre Karte nach Wahl), Gold, Splitter und das Abonnement „Reichspass“. Der genaue Inhalt jedes Angebots wird vor dem Kauf angezeigt. Kosmetik hat keine Wirkung auf das Spiel. Booster enthalten zufällige Karten: Ihre genauen Wahrscheinlichkeiten werden im Spiel angezeigt (Schaltfläche „Dropraten“). In der mobilen App wird nichts verkauft.</p>
+
+<h2>3. Preise und Zahlung</h2>
+<p>Die Preise verstehen sich in Euro inklusive aller Steuern. Die Zahlung erfolgt per Karte über Stripe; wir sehen Ihre Kartendaten nie. Ein Konto kann in 30 Tagen höchstens 50 € ausgeben. Angebote „1 pro Konto“ können nur einmal pro Konto gekauft werden.</p>
+
+<h2>4. Konto und Lieferung</h2>
+<p>Für einen Kauf ist ein REALMSHARD-Konto mit bestätigter E-Mail-Adresse nötig (eine Gastsitzung kann nicht kaufen): Der Kauf gehört zu diesem Konto. Der Inhalt wird sofort nach der Zahlung geliefert, in den beim Kauf aktiven Spielstand (Gold, Splitter, Booster, legendäre Karte nach Wahl); Kosmetik und der Pass gelten für das ganze Konto. Bei Problemen liest die Schaltfläche „Käufe wiederherstellen“ Ihre Käufe erneut ein.</p>
+
+<h2>5. Widerrufsrecht</h2>
+<p>Bei sofort gelieferten digitalen Inhalten verlangen Sie ausdrücklich diese sofortige Lieferung und nehmen zur Kenntnis, dass Sie Ihr 14-tägiges Widerrufsrecht verlieren (französisches Verbrauchergesetzbuch, Artikel L221-28 Nr. 13). Diese Zustimmung wird vor der Zahlung über ein nicht vorab angekreuztes Kästchen eingeholt und in der per E-Mail gesendeten Quittung bestätigt.</p>
+
+<h2>6. Reichspass (Abonnement)</h2>
+<p>4,99 € pro Monat inklusive MwSt., ohne Mindestlaufzeit, monatlich verlängert bis zur Kündigung. Sie können jederzeit online über „Verwalten / kündigen“ (Stripe-Portal) kündigen; die Vorteile bleiben bis zum Ende des bezahlten Monats. Exklusive Inhalte des Passes (Kartenrücken des Monats, Rahmen und Titel der Saison) kehren 6 Monate später für Splitter im „Pass-Archiv“ zurück.</p>
+
+<h2>7. Erstattungen</h2>
+<p>Schreiben Sie an <span class="todo">[VOM EIGENTÜMER AUSZUFÜLLEN: Support-E-Mail-Adresse]</span>. Ein erstatteter oder angefochtener Kauf wird nicht mehr gewährt; bereits im Spiel Ausgegebenes wird nicht zurückgenommen. Ein Kauf eines Minderjährigen ohne Erlaubnis wird auf Antrag des gesetzlichen Vertreters erstattet.</p>
+
+<h2>8. Schlichtung und anwendbares Recht</h2>
+<p>Verbraucherschlichtungsstelle: <span class="todo">[VOM EIGENTÜMER AUSZUFÜLLEN: Name, Anschrift und Website der Schlichtungsstelle]</span>. Es gilt französisches Recht; die zwingenden Schutzvorschriften Ihres Wohnsitzlandes bleiben anwendbar.</p>
+
+<h2>9. Personenbezogene Daten</h2>
+<p>Siehe die <a href="confidentialite.html">Datenschutzerklärung</a>.</p>
+</section>
+</main>
+</body>
+</html>

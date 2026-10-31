@@ -1,0 +1,119 @@
+{
+  "image": "ui.png",
+  "width": 256,
+  "height": 32,
+  "frames": {
+    "ui.intent.attack": {
+      "x": 1,
+      "y": 1,
+      "w": 16,
+      "h": 16,
+      "pivotX": 8,
+      "pivotY": 8
+    },
+    "ui.intent.block": {
+      "x": 18,
+      "y": 1,
+      "w": 16,
+      "h": 16,
+      "pivotX": 8,
+      "pivotY": 8
+    },
+    "ui.intent.unknown": {
+      "x": 35,
+      "y": 1,
+      "w": 16,
+      "h": 16,
+      "pivotX": 8,
+      "pivotY": 8
+    },
+    "ui.status.strength": {
+      "x": 52,
+      "y": 1,
+      "w": 12,
+      "h": 12,
+      "pivotX": 6,
+      "pivotY": 6
+    },
+    "ui.status.vulnerable": {
+      "x": 65,
+      "y": 1,
+      "w": 12,
+      "h": 12,
+      "pivotX": 6,
+      "pivotY": 6
+    },
+    "ui.status.weak": {
+      "x": 78,
+      "y": 1,
+      "w": 12,
+      "h": 12,
+      "pivotX": 6,
+      "pivotY": 6
+    },
+    "ui.status.faith": {
+      "x": 91,
+      "y": 1,
+      "w": 12,
+      "h": 12,
+      "pivotX": 6,
+      "pivotY": 6
+    },
+    "ui.status.thorns": {
+      "x": 104,
+      "y": 1,
+      "w": 12,
+      "h": 12,
+      "pivotX": 6,
+      "pivotY": 6
+    },
+    "ui.status.burn": {
+      "x": 117,
+      "y": 1,
+      "w": 12,
+      "h": 12,
+      "pivotX": 6,
+      "pivotY": 6
+    },
+    "ui.status.fury": {
+      "x": 130,
+      "y": 1,
+      "w": 12,
+      "h": 12,
+      "pivotX": 6,
+      "pivotY": 6
+    },
+    "ui.status.echo": {
+      "x": 143,
+      "y": 1,
+      "w": 12,
+      "h": 12,
+      "pivotX": 6,
+      "pivotY": 6
+    },
+    "ui.status.bloom": {
+      "x": 156,
+      "y": 1,
+      "w": 12,
+      "h": 12,
+      "pivotX": 6,
+      "pivotY": 6
+    },
+    "ui.status.trick": {
+      "x": 169,
+      "y": 1,
+      "w": 12,
+      "h": 12,
+      "pivotX": 6,
+      "pivotY": 6
+    },
+    "ui.status.hex": {
+      "x": 182,
+      "y": 1,
+      "w": 12,
+      "h": 12,
+      "pivotX": 6,
+      "pivotY": 6
+    }
+  }
+}
