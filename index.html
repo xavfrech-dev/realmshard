@@ -2,7 +2,7 @@
 <html lang="fr">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'sha256-H6md+IPUXNxeGkJo8bCZhJrEPaxbBWLSk/Ezc9BR9rc=' https://challenges.cloudflare.com https://hcaptcha.com https://*.hcaptcha.com; style-src 'self' 'unsafe-inline' https://hcaptcha.com https://*.hcaptcha.com; img-src 'self' data: blob:; font-src 'self' data:; media-src 'self' blob:; connect-src 'self' data: blob: https://ofuobedkvfosdqygmlvj.supabase.co wss://ofuobedkvfosdqygmlvj.supabase.co https://challenges.cloudflare.com https://hcaptcha.com https://*.hcaptcha.com; frame-src https://challenges.cloudflare.com https://hcaptcha.com https://*.hcaptcha.com; worker-src 'self' blob:; manifest-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'" />
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'sha256-8gcefOwFrPgucVHIOijYV+MFi3CmsFWPC6eCVN0FlrA=' https://challenges.cloudflare.com https://hcaptcha.com https://*.hcaptcha.com; style-src 'self' 'unsafe-inline' https://hcaptcha.com https://*.hcaptcha.com; img-src 'self' data: blob:; font-src 'self' data:; media-src 'self' blob:; connect-src 'self' data: blob: https://ofuobedkvfosdqygmlvj.supabase.co wss://ofuobedkvfosdqygmlvj.supabase.co https://challenges.cloudflare.com https://hcaptcha.com https://*.hcaptcha.com; frame-src https://challenges.cloudflare.com https://hcaptcha.com https://*.hcaptcha.com; worker-src 'self' blob:; manifest-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'" />
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
     <meta name="theme-color" content="#0E1018" />
     <!-- Installable web app (manifest + icons are injected by vite.config.ts pwaHead with the base path). -->
@@ -210,65 +210,6 @@
         color: #a99d82;
         transition: opacity 0.25s ease;
       }
-      /* Version choice on the loading screen (src/render/bootScreen.ts). */
-      #boot-mode {
-        margin-top: 18px;
-        font-family: Georgia, serif;
-        color: #e8dcbe;
-      }
-      #boot-mode .boot-mode-q {
-        font-size: 14px;
-        margin-bottom: 8px;
-        color: #f2d27a;
-      }
-      #boot-mode .boot-mode-row {
-        display: flex;
-        gap: 12px;
-        justify-content: center;
-      }
-      #boot-mode button {
-        min-width: 150px;
-        padding: 9px 14px;
-        font-family: inherit;
-        font-size: 15px;
-        font-weight: 700;
-        color: #e8dcbe;
-        background: linear-gradient(#3a2c1e, #1a120a);
-        border: 2px solid #8a6a3a;
-        border-radius: 6px;
-        cursor: pointer;
-        box-shadow: 0 0 0 2px #140a04, 0 4px 10px rgba(0, 0, 0, 0.5);
-      }
-      #boot-mode button small {
-        display: block;
-        font-size: 11px;
-        font-weight: 400;
-        color: #a99d82;
-      }
-      #boot-mode button.on {
-        color: #fff4dc;
-        border-color: #f2d27a;
-        background: linear-gradient(#5a3e1c, #2a1a0a);
-        box-shadow: 0 0 0 2px #140a04, 0 0 14px rgba(242, 210, 122, 0.55);
-      }
-      #boot-mode .boot-lang-row {
-        display: flex;
-        gap: 8px;
-        justify-content: center;
-        margin-top: 10px;
-      }
-      #boot-mode .boot-lang-row button {
-        min-width: 0;
-        padding: 5px 12px;
-        font-size: 13px;
-      }
-      #boot-mode.ask .boot-mode-q {
-        animation: bootAsk 1.2s ease-in-out infinite alternate;
-      }
-      @keyframes bootAsk {
-        from { opacity: 0.6; }
-        to { opacity: 1; }
-      }
       /* Between scenes: art still streaming (src/render/artPreload.ts). */
       #art-wait {
         position: fixed;
@@ -353,7 +294,7 @@
         }
       }
     </style>
-    <script type="module" crossorigin src="/realmshard/assets/index-6ANEm1vq.js"></script>
+    <script type="module" crossorigin src="/realmshard/assets/index-DpWbyyMt.js"></script>
     <link rel="modulepreload" crossorigin href="/realmshard/assets/pixi-CJy64CJw.js">
     <link rel="modulepreload" crossorigin href="/realmshard/assets/vendor-CmnSPyuu.js">
     <link rel="modulepreload" crossorigin href="/realmshard/assets/content-BrL8taEA.js">
@@ -372,7 +313,6 @@
         <div id="boot-logo">REALMSHARD</div>
         <div id="boot-bar"><div id="boot-fill"></div></div>
         <div id="boot-pct">Chargement… 0 %</div>
-        <div id="boot-mode"></div>
         <div id="boot-tip">Astuce : ton mana augmente d’un cristal par tour, jusqu’à 10.</div>
       </div>
     </div>
@@ -493,13 +433,11 @@
           if (done) return clearInterval(timer);
           var boot = document.getElementById('boot');
           if (!boot) return;
-          var mode = document.getElementById('boot-mode');
           var pct = (document.getElementById('boot-fill') || {}).style;
           var now = Date.now();
           var p = pct ? pct.width : '';
-          // Waiting on the first-launch version choice is not a failure.
           // A hidden tab throttles timers: its time doesn't count (audit 03 §1).
-          if (document.hidden || p !== lastPct || (mode && mode.className.indexOf('ask') >= 0) || document.querySelector('.rs-modal')) {
+          if (document.hidden || p !== lastPct || document.querySelector('.rs-modal')) {
             lastPct = p;
             lastMove = now;
           }

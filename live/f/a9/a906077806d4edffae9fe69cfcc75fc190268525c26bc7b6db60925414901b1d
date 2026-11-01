@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Realmshard — Mentions légales</title>
+<meta name="description" content="Mentions légales de Realmshard : éditeur, contact, hébergeur.">
+<meta name="robots" content="index,follow">
+<style>
+  :root{color-scheme:light dark;--bg:#f7f2e8;--fg:#2a1f14;--muted:#6b5a44;--line:#d9c9ab;--accent:#8a2a30;--box:#efe6d4}
+  @media (prefers-color-scheme:dark){:root{--bg:#16110c;--fg:#efe4cc;--muted:#b3a183;--line:#4a3a28;--accent:#e4a35a;--box:#211910}}
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.55 Georgia,"Times New Roman",serif}
+  main{max-width:760px;margin:0 auto;padding:24px 16px 48px}
+  nav.langs{display:flex;gap:12px;justify-content:flex-end;font:600 14px system-ui,sans-serif;margin-bottom:8px}
+  nav.langs a,a{color:var(--accent)}
+  h1{font-size:28px;margin:8px 0 4px}
+  h2{font-size:20px;margin:28px 0 8px;border-bottom:1px solid var(--line);padding-bottom:4px}
+  p.meta{color:var(--muted);font-size:14px;margin:0 0 16px}
+  dl{margin:0}
+  dt{font-weight:700;margin-top:10px}
+  dd{margin:2px 0 0 0}
+  .todo{background:#ffe08a;color:#3a2a00;padding:0 4px;border-radius:3px;font-family:system-ui,sans-serif;font-size:14px}
+  footer{margin-top:32px;font-size:14px;color:var(--muted)}
+  @supports selector(:has(*)){
+    section.lang{display:none}
+    section.lang:target,body:not(:has(section.lang:target)) #fr{display:block}
+  }
+</style>
+</head>
+<body>
+<main>
+<nav class="langs" aria-label="Langue / Language / Sprache"><a href="#fr" hreflang="fr">Français</a><a href="#en" hreflang="en">English</a><a href="#de" hreflang="de">Deutsch</a></nav>
+
+<section class="lang" id="fr" lang="fr">
+<h1>Mentions légales</h1>
+<p class="meta">Realmshard (bêta) — dernière mise à jour : 31 octobre 2026</p>
+
+<h2>Éditeur</h2>
+<dl>
+<dt>Éditeur</dt><dd>Particulier, éditeur à titre non professionnel (jeu gratuit, rien n’est vendu pendant la bêta). Comme le permet la loi n° 2004-575 du 21 juin 2004 pour la confiance dans l’économie numérique (LCEN), son nom et son adresse sont connus de l’hébergeur et ne sont pas publiés ici.</dd>
+<dt>Directeur de la publication</dt><dd>L’éditeur.</dd>
+<dt>Contact</dt><dd><a href="mailto:pikafpv@gmail.com">pikafpv@gmail.com</a> — ou, dans le jeu, « Signaler un bug ».</dd>
+</dl>
+
+<h2>Hébergement</h2>
+<dl>
+<dt>Site du jeu</dt><dd>GitHub Pages — GitHub, Inc., 88 Colin P. Kelly Jr. Street, San Francisco, CA 94107, États-Unis.</dd>
+<dt>Comptes, sauvegardes et classements</dt><dd>Supabase — Supabase Pte. Ltd., 65 Chulia Street, #38-02/03, OCBC Centre, Singapour 049513 ; données hébergées dans la région AWS eu-west-1 (Irlande, Union européenne).</dd>
+<dt>E-mails du compte</dt><dd>Brevo — Sendinblue SAS, 9-17 rue Salneuve, 75017 Paris, France.</dd>
+</dl>
+
+<h2>Propriété intellectuelle</h2>
+<p>Realmshard est un projet de fan, non officiel, inspiré de l’univers de Dark Age of Camelot. Dark Age of Camelot est une marque de ses détenteurs respectifs, sans lien avec ce projet. Le code, les textes et les illustrations propres à Realmshard appartiennent à leur éditeur.</p>
+
+<h2>Données personnelles</h2>
+<p>Voir la <a href="confidentialite.html#fr">politique de confidentialité</a> et la page <a href="supprimer-compte.html#fr">Supprimer mon compte</a>.</p>
+
+<footer><a href="confidentialite.html#fr">Confidentialité</a> · <a href="a-propos.html#fr">À propos de la bêta</a> · <a href="./">Jouer</a></footer>
+</section>
+
+<section class="lang" id="en" lang="en">
+<h1>Legal notice</h1>
+<p class="meta">Realmshard (beta) — last updated: 31 October 2026</p>
+
+<h2>Publisher</h2>
+<dl>
+<dt>Publisher</dt><dd>A private individual publishing on a non-professional basis (free game, nothing is sold during the beta). As allowed by French law no. 2004-575 of 21 June 2004 (LCEN), their name and address are known to the host and are not published here.</dd>
+<dt>Publication director</dt><dd>The publisher.</dd>
+<dt>Contact</dt><dd><a href="mailto:pikafpv@gmail.com">pikafpv@gmail.com</a> — or, in the game, “Report a bug”.</dd>
+</dl>
+
+<h2>Hosting</h2>
+<dl>
+<dt>Game website</dt><dd>GitHub Pages — GitHub, Inc., 88 Colin P. Kelly Jr. Street, San Francisco, CA 94107, United States.</dd>
+<dt>Accounts, saves and leaderboards</dt><dd>Supabase — Supabase Pte. Ltd., 65 Chulia Street, #38-02/03, OCBC Centre, Singapore 049513; data hosted in the AWS eu-west-1 region (Ireland, European Union).</dd>
+<dt>Account e-mails</dt><dd>Brevo — Sendinblue SAS, 9-17 rue Salneuve, 75017 Paris, France.</dd>
+</dl>
+
+<h2>Intellectual property</h2>
+<p>Realmshard is an unofficial fan project inspired by the world of Dark Age of Camelot. Dark Age of Camelot is a trademark of its respective owners, who are not connected to this project. Realmshard’s own code, texts and artwork belong to its publisher.</p>
+
+<h2>Personal data</h2>
+<p>See the <a href="confidentialite.html#en">privacy policy</a> and the <a href="supprimer-compte.html#en">Delete my account</a> page.</p>
+
+<footer><a href="confidentialite.html#en">Privacy</a> · <a href="a-propos.html#en">About the beta</a> · <a href="./">Play</a></footer>
+</section>
+
+<section class="lang" id="de" lang="de">
+<h1>Impressum</h1>
+<p class="meta">Realmshard (Beta) — zuletzt aktualisiert: 31. Oktober 2026</p>
+
+<h2>Herausgeber</h2>
+<dl>
+<dt>Herausgeber</dt><dd>Privatperson, nicht gewerblich (kostenloses Spiel, während der Beta wird nichts verkauft). Wie es das französische Gesetz Nr. 2004-575 vom 21. Juni 2004 (LCEN) erlaubt, sind Name und Anschrift dem Hoster bekannt und werden hier nicht veröffentlicht.</dd>
+<dt>Verantwortlich für den Inhalt</dt><dd>Der Herausgeber.</dd>
+<dt>Kontakt</dt><dd><a href="mailto:pikafpv@gmail.com">pikafpv@gmail.com</a> — oder im Spiel „Fehler melden“.</dd>
+</dl>
+
+<h2>Hosting</h2>
+<dl>
+<dt>Website des Spiels</dt><dd>GitHub Pages — GitHub, Inc., 88 Colin P. Kelly Jr. Street, San Francisco, CA 94107, USA.</dd>
+<dt>Konten, Spielstände und Ranglisten</dt><dd>Supabase — Supabase Pte. Ltd., 65 Chulia Street, #38-02/03, OCBC Centre, Singapur 049513; Daten in der AWS-Region eu-west-1 (Irland, Europäische Union).</dd>
+<dt>Konto-E-Mails</dt><dd>Brevo — Sendinblue SAS, 9-17 rue Salneuve, 75017 Paris, Frankreich.</dd>
+</dl>
+
+<h2>Geistiges Eigentum</h2>
+<p>Realmshard ist ein inoffizielles Fanprojekt, inspiriert von der Welt von Dark Age of Camelot. Dark Age of Camelot ist eine Marke ihrer jeweiligen Inhaber, die mit diesem Projekt nicht verbunden sind. Der eigene Code, die Texte und die Illustrationen von Realmshard gehören seinem Herausgeber.</p>
+
+<h2>Personenbezogene Daten</h2>
+<p>Siehe die <a href="confidentialite.html#de">Datenschutzerklärung</a> und die Seite <a href="supprimer-compte.html#de">Konto löschen</a>.</p>
+
+<footer><a href="confidentialite.html#de">Datenschutz</a> · <a href="a-propos.html#de">Über die Beta</a> · <a href="./">Spielen</a></footer>
+</section>
+</main>
+</body>
+</html>

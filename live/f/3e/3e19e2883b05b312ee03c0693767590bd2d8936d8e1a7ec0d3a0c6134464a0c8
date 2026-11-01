@@ -1,0 +1,459 @@
+{
+  "image": "albion.png",
+  "width": 512,
+  "height": 1024,
+  "frames": {
+    "albion.card.frame.uncommon": {
+      "x": 1,
+      "y": 1,
+      "w": 96,
+      "h": 128,
+      "pivotX": 48,
+      "pivotY": 64
+    },
+    "albion.bg.sky": {
+      "x": 98,
+      "y": 1,
+      "w": 320,
+      "h": 96
+    },
+    "albion.jarlKorvath.idle.0": {
+      "x": 419,
+      "y": 1,
+      "w": 80,
+      "h": 80,
+      "pivotX": 40,
+      "pivotY": 79,
+      "animation": "albion.jarlKorvath.idle",
+      "animationIndex": 0
+    },
+    "albion.jarlKorvath.idle.1": {
+      "x": 1,
+      "y": 130,
+      "w": 80,
+      "h": 80,
+      "pivotX": 40,
+      "pivotY": 79,
+      "animation": "albion.jarlKorvath.idle",
+      "animationIndex": 1
+    },
+    "albion.jarlKorvath.idle.2": {
+      "x": 82,
+      "y": 130,
+      "w": 80,
+      "h": 80,
+      "pivotX": 40,
+      "pivotY": 79,
+      "animation": "albion.jarlKorvath.idle",
+      "animationIndex": 2
+    },
+    "albion.jarlKorvath.idle.3": {
+      "x": 163,
+      "y": 130,
+      "w": 80,
+      "h": 80,
+      "pivotX": 40,
+      "pivotY": 79,
+      "animation": "albion.jarlKorvath.idle",
+      "animationIndex": 3
+    },
+    "albion.bg.mid": {
+      "x": 1,
+      "y": 211,
+      "w": 320,
+      "h": 64
+    },
+    "albion.knight.idle.0": {
+      "x": 322,
+      "y": 211,
+      "w": 32,
+      "h": 48,
+      "pivotX": 16,
+      "pivotY": 47,
+      "animation": "albion.knight.idle",
+      "animationIndex": 0
+    },
+    "albion.knight.idle.1": {
+      "x": 355,
+      "y": 211,
+      "w": 32,
+      "h": 48,
+      "pivotX": 16,
+      "pivotY": 47,
+      "animation": "albion.knight.idle",
+      "animationIndex": 1
+    },
+    "albion.knight.idle.2": {
+      "x": 388,
+      "y": 211,
+      "w": 32,
+      "h": 48,
+      "pivotX": 16,
+      "pivotY": 47,
+      "animation": "albion.knight.idle",
+      "animationIndex": 2
+    },
+    "albion.knight.idle.3": {
+      "x": 421,
+      "y": 211,
+      "w": 32,
+      "h": 48,
+      "pivotX": 16,
+      "pivotY": 47,
+      "animation": "albion.knight.idle",
+      "animationIndex": 3
+    },
+    "albion.cleric.idle.0": {
+      "x": 454,
+      "y": 211,
+      "w": 32,
+      "h": 48,
+      "pivotX": 16,
+      "pivotY": 47,
+      "animation": "albion.cleric.idle",
+      "animationIndex": 0
+    },
+    "albion.cleric.idle.1": {
+      "x": 1,
+      "y": 276,
+      "w": 32,
+      "h": 48,
+      "pivotX": 16,
+      "pivotY": 47,
+      "animation": "albion.cleric.idle",
+      "animationIndex": 1
+    },
+    "albion.cleric.idle.2": {
+      "x": 34,
+      "y": 276,
+      "w": 32,
+      "h": 48,
+      "pivotX": 16,
+      "pivotY": 47,
+      "animation": "albion.cleric.idle",
+      "animationIndex": 2
+    },
+    "albion.cleric.idle.3": {
+      "x": 67,
+      "y": 276,
+      "w": 32,
+      "h": 48,
+      "pivotX": 16,
+      "pivotY": 47,
+      "animation": "albion.cleric.idle",
+      "animationIndex": 3
+    },
+    "albion.paladin.idle.0": {
+      "x": 100,
+      "y": 276,
+      "w": 32,
+      "h": 48,
+      "pivotX": 16,
+      "pivotY": 47,
+      "animation": "albion.paladin.idle",
+      "animationIndex": 0
+    },
+    "albion.paladin.idle.1": {
+      "x": 133,
+      "y": 276,
+      "w": 32,
+      "h": 48,
+      "pivotX": 16,
+      "pivotY": 47,
+      "animation": "albion.paladin.idle",
+      "animationIndex": 1
+    },
+    "albion.paladin.idle.2": {
+      "x": 166,
+      "y": 276,
+      "w": 32,
+      "h": 48,
+      "pivotX": 16,
+      "pivotY": 47,
+      "animation": "albion.paladin.idle",
+      "animationIndex": 2
+    },
+    "albion.paladin.idle.3": {
+      "x": 199,
+      "y": 276,
+      "w": 32,
+      "h": 48,
+      "pivotX": 16,
+      "pivotY": 47,
+      "animation": "albion.paladin.idle",
+      "animationIndex": 3
+    },
+    "albion.bandit.idle.0": {
+      "x": 232,
+      "y": 276,
+      "w": 32,
+      "h": 48,
+      "pivotX": 16,
+      "pivotY": 47,
+      "animation": "albion.bandit.idle",
+      "animationIndex": 0
+    },
+    "albion.bandit.idle.1": {
+      "x": 265,
+      "y": 276,
+      "w": 32,
+      "h": 48,
+      "pivotX": 16,
+      "pivotY": 47,
+      "animation": "albion.bandit.idle",
+      "animationIndex": 1
+    },
+    "albion.bandit.idle.2": {
+      "x": 298,
+      "y": 276,
+      "w": 32,
+      "h": 48,
+      "pivotX": 16,
+      "pivotY": 47,
+      "animation": "albion.bandit.idle",
+      "animationIndex": 2
+    },
+    "albion.bandit.idle.3": {
+      "x": 331,
+      "y": 276,
+      "w": 32,
+      "h": 48,
+      "pivotX": 16,
+      "pivotY": 47,
+      "animation": "albion.bandit.idle",
+      "animationIndex": 3
+    },
+    "albion.banditArcher.idle.0": {
+      "x": 364,
+      "y": 276,
+      "w": 32,
+      "h": 48,
+      "pivotX": 16,
+      "pivotY": 47,
+      "animation": "albion.banditArcher.idle",
+      "animationIndex": 0
+    },
+    "albion.banditArcher.idle.1": {
+      "x": 397,
+      "y": 276,
+      "w": 32,
+      "h": 48,
+      "pivotX": 16,
+      "pivotY": 47,
+      "animation": "albion.banditArcher.idle",
+      "animationIndex": 1
+    },
+    "albion.banditArcher.idle.2": {
+      "x": 430,
+      "y": 276,
+      "w": 32,
+      "h": 48,
+      "pivotX": 16,
+      "pivotY": 47,
+      "animation": "albion.banditArcher.idle",
+      "animationIndex": 2
+    },
+    "albion.banditArcher.idle.3": {
+      "x": 463,
+      "y": 276,
+      "w": 32,
+      "h": 48,
+      "pivotX": 16,
+      "pivotY": 47,
+      "animation": "albion.banditArcher.idle",
+      "animationIndex": 3
+    },
+    "albion.wight.idle.0": {
+      "x": 1,
+      "y": 325,
+      "w": 32,
+      "h": 48,
+      "pivotX": 16,
+      "pivotY": 47,
+      "animation": "albion.wight.idle",
+      "animationIndex": 0
+    },
+    "albion.wight.idle.1": {
+      "x": 34,
+      "y": 325,
+      "w": 32,
+      "h": 48,
+      "pivotX": 16,
+      "pivotY": 47,
+      "animation": "albion.wight.idle",
+      "animationIndex": 1
+    },
+    "albion.wight.idle.2": {
+      "x": 67,
+      "y": 325,
+      "w": 32,
+      "h": 48,
+      "pivotX": 16,
+      "pivotY": 47,
+      "animation": "albion.wight.idle",
+      "animationIndex": 2
+    },
+    "albion.wight.idle.3": {
+      "x": 100,
+      "y": 325,
+      "w": 32,
+      "h": 48,
+      "pivotX": 16,
+      "pivotY": 47,
+      "animation": "albion.wight.idle",
+      "animationIndex": 3
+    },
+    "albion.shieldBearer.idle.0": {
+      "x": 133,
+      "y": 325,
+      "w": 48,
+      "h": 48,
+      "pivotX": 24,
+      "pivotY": 47,
+      "animation": "albion.shieldBearer.idle",
+      "animationIndex": 0
+    },
+    "albion.shieldBearer.idle.1": {
+      "x": 182,
+      "y": 325,
+      "w": 48,
+      "h": 48,
+      "pivotX": 24,
+      "pivotY": 47,
+      "animation": "albion.shieldBearer.idle",
+      "animationIndex": 1
+    },
+    "albion.shieldBearer.idle.2": {
+      "x": 231,
+      "y": 325,
+      "w": 48,
+      "h": 48,
+      "pivotX": 24,
+      "pivotY": 47,
+      "animation": "albion.shieldBearer.idle",
+      "animationIndex": 2
+    },
+    "albion.shieldBearer.idle.3": {
+      "x": 280,
+      "y": 325,
+      "w": 48,
+      "h": 48,
+      "pivotX": 24,
+      "pivotY": 47,
+      "animation": "albion.shieldBearer.idle",
+      "animationIndex": 3
+    },
+    "albion.bg.clouds": {
+      "x": 1,
+      "y": 374,
+      "w": 320,
+      "h": 40
+    },
+    "albion.bg.ground": {
+      "x": 1,
+      "y": 415,
+      "w": 320,
+      "h": 40
+    },
+    "albion.bg.near": {
+      "x": 1,
+      "y": 456,
+      "w": 320,
+      "h": 32
+    },
+    "albion.wolfCub.idle.0": {
+      "x": 322,
+      "y": 456,
+      "w": 32,
+      "h": 32,
+      "pivotX": 16,
+      "pivotY": 31,
+      "animation": "albion.wolfCub.idle",
+      "animationIndex": 0
+    },
+    "albion.wolfCub.idle.1": {
+      "x": 355,
+      "y": 456,
+      "w": 32,
+      "h": 32,
+      "pivotX": 16,
+      "pivotY": 31,
+      "animation": "albion.wolfCub.idle",
+      "animationIndex": 1
+    },
+    "albion.wolfCub.idle.2": {
+      "x": 388,
+      "y": 456,
+      "w": 32,
+      "h": 32,
+      "pivotX": 16,
+      "pivotY": 31,
+      "animation": "albion.wolfCub.idle",
+      "animationIndex": 2
+    },
+    "albion.wolfCub.idle.3": {
+      "x": 421,
+      "y": 456,
+      "w": 32,
+      "h": 32,
+      "pivotX": 16,
+      "pivotY": 31,
+      "animation": "albion.wolfCub.idle",
+      "animationIndex": 3
+    },
+    "albion.bogSprite.idle.0": {
+      "x": 454,
+      "y": 456,
+      "w": 32,
+      "h": 32,
+      "pivotX": 16,
+      "pivotY": 31,
+      "animation": "albion.bogSprite.idle",
+      "animationIndex": 0
+    },
+    "albion.bogSprite.idle.1": {
+      "x": 1,
+      "y": 489,
+      "w": 32,
+      "h": 32,
+      "pivotX": 16,
+      "pivotY": 31,
+      "animation": "albion.bogSprite.idle",
+      "animationIndex": 1
+    },
+    "albion.bogSprite.idle.2": {
+      "x": 34,
+      "y": 489,
+      "w": 32,
+      "h": 32,
+      "pivotX": 16,
+      "pivotY": 31,
+      "animation": "albion.bogSprite.idle",
+      "animationIndex": 2
+    },
+    "albion.bogSprite.idle.3": {
+      "x": 67,
+      "y": 489,
+      "w": 32,
+      "h": 32,
+      "pivotX": 16,
+      "pivotY": 31,
+      "animation": "albion.bogSprite.idle",
+      "animationIndex": 3
+    },
+    "albion.palette.swatch": {
+      "x": 100,
+      "y": 489,
+      "w": 72,
+      "h": 8
+    },
+    "albion.bg.particle": {
+      "x": 173,
+      "y": 489,
+      "w": 4,
+      "h": 4,
+      "pivotX": 2,
+      "pivotY": 2
+    }
+  }
+}
