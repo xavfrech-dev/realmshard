@@ -1,30 +1,30 @@
 {
   "schema": 1,
-  "updated": "2026-11-01T10:18:27.021Z",
+  "updated": "2026-11-01T11:00:35.883Z",
   "channels": {
     "desktop": {
-      "build": 1793528263,
+      "build": 1793530749,
       "version": "0.1.2",
-      "protocol": 14,
+      "protocol": 15,
       "shellMin": 1,
       "fileCount": 3856,
-      "totalBytes": 149776389,
+      "totalBytes": 149777771,
       "envelope": "desktop.json",
-      "previous": null
+      "previous": "history/desktop-1793528263.json"
     },
     "android": {
-      "build": 1793528263,
+      "build": 1793530749,
       "version": "0.1.2",
-      "protocol": 14,
+      "protocol": 15,
       "shellMin": 1,
       "fileCount": 3863,
-      "totalBytes": 149783462,
+      "totalBytes": 149784844,
       "envelope": "android.json",
-      "previous": null
+      "previous": "history/android-1793528263.json"
     }
   },
   "objects": {
-    "count": 3889,
-    "bytes": 151913067
+    "count": 3942,
+    "bytes": 156168040
   }
 }
