@@ -19,7 +19,7 @@
  * (the art cache is keyed by the art version, so it survives code-only deploys;
  * music and sounds have one version each, so a new track keeps the sounds cached).
  */
-const BUILD = '20261101T0311-5c77dc';
+const BUILD = '20261101T0424-9d9dee';
 const ART = '4b453bb902';
 const AUDIO = '4de57170e1';
 const MUSIC = 'd3530f44b3';
@@ -30,7 +30,7 @@ const MUSIC_CACHE = `realmshard-music-${MUSIC}`;
 const KEEP = [SHELL_CACHE, ART_CACHE, AUDIO_CACHE, MUSIC_CACHE];
 
 /** This build's JS / CSS chunks (boot + lazy modes, not the EN / DE packs), from vite.config.ts. */
-const PRECACHE = ["assets/Duel-CY-FauT0.js","assets/activity-Cwv9d9Ci.js","assets/bundler-BTRBNtLh.js","assets/cardGrid-C_WH-meX.js","assets/cine-B2LG9cJ5.js","assets/clientErrors-CG10gvIL.js","assets/collection-DgfzEK7E.js","assets/content-B8-cVuJc.js","assets/corruptSaveNotice-CbcprZT9.js","assets/duel-komNoBzn.js","assets/duelFx-B2ucNlNb.js","assets/index-BKe9QXJY.js","assets/index-D2ETncZD.css","assets/index-e6yEDVEA.js","assets/interrupted-BREMxKYb.js","assets/legendLines-Bst4GVJd.js","assets/matchRecap-Cbt8WpXG.js","assets/pixelUpscale-C4xBpbgU.js","assets/pixi-DfByGj7m.js","assets/premiumSync-B9vhu_IN.js","assets/rankedPay-11XGpceR.js","assets/rankedServer-B4oZA2UB.js","assets/realmRankView-Ba_CwICa.js","assets/rvr-BrFMZexy.js","assets/sessionHealth-B6BtF5eb.js","assets/story-C624W-mA.js","assets/vendor-XAFx2Cl8.js","assets/voiceLevels.gen-CX4g1yZ1.js"];
+const PRECACHE = ["assets/Duel-BmBye7BT.js","assets/activity-BW0T1jvK.js","assets/bundler-CXsXdATq.js","assets/cardGrid-Rr9tMQbr.js","assets/cine-BW9abqwv.js","assets/clientErrors-CO-QmRQA.js","assets/collection-DNPj3P8Y.js","assets/content-BrL8taEA.js","assets/corruptSaveNotice-BLvs3XX8.js","assets/duel-CZ3-ibzh.js","assets/duelFx-CMAq9PhS.js","assets/index-6ANEm1vq.js","assets/index-D2ETncZD.css","assets/index-e6yEDVEA.js","assets/interrupted-DzDxrYh8.js","assets/legendLines-Bst4GVJd.js","assets/matchRecap-CNAdMbbe.js","assets/pixelUpscale-C4xBpbgU.js","assets/pixi-CJy64CJw.js","assets/premiumSync-Da3e-TKl.js","assets/rankedPay-BOv4VkFC.js","assets/rankedServer-BuTFq8tX.js","assets/realmRankView-BgntLeqT.js","assets/rvr-CKXBsAKz.js","assets/sessionHealth-B6BtF5eb.js","assets/story-vmsQoBM1.js","assets/vendor-CmnSPyuu.js","assets/voiceLevels.gen-CX4g1yZ1.js"];
 
 /* REALMSHARD service worker — byte ranges of the music (audit SON-08).
  *
