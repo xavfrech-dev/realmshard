@@ -19,9 +19,9 @@
  * (the art cache is keyed by the art version, so it survives code-only deploys;
  * music and sounds have one version each, so a new track keeps the sounds cached).
  */
-const BUILD = '20261102T1244-e3694e';
+const BUILD = '20261102T1246-c93698';
 const ART = '125743b308';
-const AUDIO = 'eb76612ea9';
+const AUDIO = 'c182775379';
 const MUSIC = 'd3530f44b3';
 const SHELL_CACHE = `realmshard-shell-${BUILD}`;
 const ART_CACHE = `realmshard-art-${ART}`;
@@ -30,7 +30,7 @@ const MUSIC_CACHE = `realmshard-music-${MUSIC}`;
 const KEEP = [SHELL_CACHE, ART_CACHE, AUDIO_CACHE, MUSIC_CACHE];
 
 /** This build's JS / CSS chunks (boot + lazy modes, not the EN / DE packs), from vite.config.ts. */
-const PRECACHE = ["assets/Duel-YuPigk4c.js","assets/activity-CATtuo6j.js","assets/bundler-CXsXdATq.js","assets/cardGrid-DjCkIJtS.js","assets/cine-DMcvxIv5.js","assets/clientErrors-BTJZb_er.js","assets/collection-Cl-k6uOd.js","assets/content-BLqGhW6N.js","assets/corruptSaveNotice-C59wm_Xa.js","assets/duel-DM6l-Lef.js","assets/duelFx-BQv7WT8U.js","assets/index-CqdQ7y2u.js","assets/index-D2ETncZD.css","assets/index-e6yEDVEA.js","assets/interrupted-RhPBxmQS.js","assets/legendLines-CWvKZ2fb.js","assets/matchRecap-DDRr-Yjo.js","assets/pixelUpscale-C4xBpbgU.js","assets/pixi-CJy64CJw.js","assets/premiumSync-CNpTFwzW.js","assets/rankedPay-CdIhuFJl.js","assets/rankedServer-Cc638NrB.js","assets/realmRankView-LThffGTZ.js","assets/recipes-CyLoC6Mo.js","assets/recipesLive-C3-B-bl1.js","assets/rvr-ztsPMibi.js","assets/sessionHealth-B6BtF5eb.js","assets/story-cSS_u4hF.js","assets/vendor-CmnSPyuu.js","assets/voiceLevels.gen-C7ziXozs.js"];
+const PRECACHE = ["assets/Duel-BoL6uSbB.js","assets/activity-DqAEr3pa.js","assets/bundler-CXsXdATq.js","assets/cardGrid-DRM51mko.js","assets/cine-BrxwdZLv.js","assets/clientErrors-BlmybXS4.js","assets/collection-BO2uXXAM.js","assets/content-BbZZMJdC.js","assets/corruptSaveNotice-C6Q6MATk.js","assets/duel-Bv6cOOTb.js","assets/duelFx-SYTHz3im.js","assets/index-D2ETncZD.css","assets/index-e6yEDVEA.js","assets/index-ji6crUqb.js","assets/interrupted-BOeFWP4c.js","assets/legendLines-CWvKZ2fb.js","assets/matchRecap-IiuTxV7S.js","assets/pixelUpscale-C4xBpbgU.js","assets/pixi-CJy64CJw.js","assets/premiumSync-BpywV9pK.js","assets/rankedPay-B-Pdxbo9.js","assets/rankedServer-BPbTTvTB.js","assets/realmRankView-hYwTFgL_.js","assets/recipes-Cu-L1fYQ.js","assets/recipesLive-C5OoueRB.js","assets/rvr-IvY4pxaH.js","assets/sessionHealth-B6BtF5eb.js","assets/story-CqsAggsu.js","assets/vendor-CmnSPyuu.js","assets/voiceLevels.gen-DkfQCdxA.js"];
 
 /* REALMSHARD service worker — byte ranges of the music (audit SON-08).
  *
