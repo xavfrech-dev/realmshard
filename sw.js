@@ -19,9 +19,9 @@
  * (the art cache is keyed by the art version, so it survives code-only deploys;
  * music and sounds have one version each, so a new track keeps the sounds cached).
  */
-const BUILD = '20261105T2305-37449d';
-const ART = '125743b308';
-const AUDIO = 'c182775379';
+const BUILD = '20261106T1159-fb4b31';
+const ART = '96d5a04be1';
+const AUDIO = '6bd18ef0c8';
 const MUSIC = 'b80f6cc630';
 const SHELL_CACHE = `realmshard-shell-${BUILD}`;
 const ART_CACHE = `realmshard-art-${ART}`;
@@ -30,7 +30,7 @@ const MUSIC_CACHE = `realmshard-music-${MUSIC}`;
 const KEEP = [SHELL_CACHE, ART_CACHE, AUDIO_CACHE, MUSIC_CACHE];
 
 /** This build's JS / CSS chunks (boot + lazy modes, not the EN / DE packs), from vite.config.ts. */
-const PRECACHE = ["assets/Duel-Bh5ENs2N.js","assets/activity-DwITwAtQ.js","assets/bundler-CXsXdATq.js","assets/cardGrid-CT2pi-Tm.js","assets/cine-oGRevrNE.js","assets/clientErrors-a6IGpyyL.js","assets/collection-DkjZ36LV.js","assets/content-Dm4zJrkM.js","assets/corruptSaveNotice-DF1eg0dO.js","assets/duel-BRNBqhMA.js","assets/duelFx-kA3qDa3r.js","assets/index-CawFiQB7.js","assets/index-D2ETncZD.css","assets/index-e6yEDVEA.js","assets/interrupted-CRwotFqF.js","assets/legendLines-CWvKZ2fb.js","assets/matchRecap-sO6Z9Ilg.js","assets/pixelUpscale-C4xBpbgU.js","assets/pixi-CJy64CJw.js","assets/premiumSync-J-VS4-Z1.js","assets/rankedPay-B3be3E_6.js","assets/rankedServer-B4rmv47m.js","assets/realmRankView-DWkvFqb7.js","assets/recipes-imq2aZS8.js","assets/recipesLive-BLZWv3e0.js","assets/rvr-DBupiU8l.js","assets/sessionHealth-B6BtF5eb.js","assets/story-fap8Bdnr.js","assets/vendor-CmnSPyuu.js","assets/voiceLevels.gen-DkfQCdxA.js"];
+const PRECACHE = ["assets/activity-DOxaCyYs.js","assets/bundler-ByEjgluQ.js","assets/cardGrid-BAKsdaff.js","assets/cine-DwG8hTFH.js","assets/classBlurbs-BUkBzuzo.js","assets/clientErrors-Cc5VkWY2.js","assets/collection-CKpKWQ7X.js","assets/confirmBanner-78gqxRk-.js","assets/content-CTkoPEy2.js","assets/corruptSaveNotice-D8RnUw6E.js","assets/cosmeticUnlocks-S4YfBYo8.js","assets/countUp-BI-Q854e.js","assets/duel-CXgqESA8.js","assets/duelGlue-C9c4Bakw.js","assets/emailConfirm-hHxlhJ6n.js","assets/fakeSocial-wobJ-mNS.js","assets/filter-CSM-g7la.js","assets/format-DYve8mDI.js","assets/friendsLadder-BbZdxPNe.js","assets/heroWidgets-Tdmzkd_k.js","assets/heroic-BKFTV-en.js","assets/hooks-gIinjsPy.js","assets/i18n-Dud_tkfS.js","assets/index-ChwB7qmh.js","assets/index-D2ETncZD.css","assets/index-e6yEDVEA.js","assets/interrupted-DhjpJi1x.js","assets/legendLines-CWvKZ2fb.js","assets/lessons-B-Zv4eZw.js","assets/lessons-BUSsUgmC.js","assets/lessons-CizJpTge.js","assets/loginClaim-BE8W9ha9.js","assets/matchRecap-_AWidSU1.js","assets/matchStats-CAKKZWDK.js","assets/online-BJyqMqiA.js","assets/panel-KBc9Haze.js","assets/patchNotes-DxyE06zZ.js","assets/pixelUpscale-C4xBpbgU.js","assets/pixi-BCAW00zU.js","assets/playableDecks-Dc8q7pke.js","assets/playback-DLyGYw1_.js","assets/premiumSync-Cz5jQ5WC.js","assets/raid-CBnKqd1W.js","assets/rankedPay-Dz_FjqTI.js","assets/rankedServer-CIhEMgzn.js","assets/realmRankView-BO6cM2-1.js","assets/recipes-DaL2QcZE.js","assets/recipesLive-CzT65UFO.js","assets/replays-C5WG3pH5.js","assets/replaysPanel-D3k6ChUy.js","assets/rtTabs-CmZ8KxbK.js","assets/rvr-CnzdU-z2.js","assets/service-CDudH3ls.js","assets/sessionHealth-Bf0yi8aR.js","assets/sfxExtLevels.gen-CeCo9DY7.js","assets/social-BT5k--kP.js","assets/spectate-M8sZrRKQ.js","assets/store-BC1tAxIA.js","assets/story-BTGyBxLl.js","assets/supabaseSocial-CgQiIkh2.js","assets/updateNotes-Db5Rtj1e.js","assets/vendor-RYDzUT2A.js","assets/voiceLevels.gen-DkfQCdxA.js"];
 
 /* REALMSHARD service worker — byte ranges of the music (audit SON-08).
  *
@@ -347,7 +347,8 @@ self.addEventListener('push', (event) => {
     d = { body: event.data ? event.data.text() : '' };
   }
   const title = typeof d.title === 'string' && d.title ? d.title : 'REALMSHARD';
-  const target = d.target === 'boosters' ? 'boosters' : 'menu';
+  // 'update': an update announcement (update-announce), the tap opens the update notes.
+  const target = d.target === 'boosters' || d.target === 'update' ? d.target : 'menu';
   event.waitUntil(
     self.registration.showNotification(title, {
       body: typeof d.body === 'string' ? d.body : '',
@@ -363,7 +364,8 @@ self.addEventListener('push', (event) => {
 
 self.addEventListener('notificationclick', (event) => {
   event.notification.close();
-  const target = event.notification.data && event.notification.data.target === 'boosters' ? 'boosters' : 'menu';
+  const t = event.notification.data && event.notification.data.target;
+  const target = t === 'boosters' || t === 'update' ? t : 'menu';
   event.waitUntil(
     (async () => {
       const wins = await self.clients.matchAll({ type: 'window', includeUncontrolled: true });
