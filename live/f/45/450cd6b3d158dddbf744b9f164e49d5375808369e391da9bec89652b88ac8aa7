@@ -1,0 +1,958 @@
+{
+ "atlases": {
+  "fx/fx_status.png": [
+   960,
+   480
+  ],
+  "fx/fx_impact.png": [
+   1632,
+   576
+  ],
+  "fx/fx_travel.png": [
+   960,
+   512
+  ]
+ },
+ "extraAtlases": {
+  "fx/fx2_kw.png": [
+   1728,
+   672
+  ],
+  "fx/fx2_school.png": [
+   1152,
+   480
+  ],
+  "fx/fx2_big.png": [
+   672,
+   896
+  ]
+ },
+ "entries": {
+  "area.arcane@burst": {
+   "file": "fx/fx2_school.png",
+   "x": 0,
+   "y": 288,
+   "w": 96,
+   "h": 64,
+   "pivotX": 48,
+   "pivotY": 32,
+   "frames": 6
+  },
+  "area.fire@burst": {
+   "file": "fx/fx_travel.png",
+   "x": 0,
+   "y": 0,
+   "w": 96,
+   "h": 64,
+   "pivotX": 48,
+   "pivotY": 32,
+   "frames": 6
+  },
+  "area.frost@burst": {
+   "file": "fx/fx_travel.png",
+   "x": 0,
+   "y": 320,
+   "w": 96,
+   "h": 64,
+   "pivotX": 48,
+   "pivotY": 32,
+   "frames": 5
+  },
+  "area.heal@burst": {
+   "file": "fx/fx_travel.png",
+   "x": 0,
+   "y": 64,
+   "w": 96,
+   "h": 64,
+   "pivotX": 48,
+   "pivotY": 32,
+   "frames": 6
+  },
+  "area.holy@burst": {
+   "file": "fx/fx_travel.png",
+   "x": 0,
+   "y": 128,
+   "w": 96,
+   "h": 64,
+   "pivotX": 48,
+   "pivotY": 32,
+   "frames": 6
+  },
+  "area.lightning@burst": {
+   "file": "fx/fx2_school.png",
+   "x": 576,
+   "y": 288,
+   "w": 96,
+   "h": 64,
+   "pivotX": 48,
+   "pivotY": 32,
+   "frames": 6
+  },
+  "area.poison@burst": {
+   "file": "fx/fx_travel.png",
+   "x": 0,
+   "y": 192,
+   "w": 96,
+   "h": 64,
+   "pivotX": 48,
+   "pivotY": 32,
+   "frames": 6
+  },
+  "area.shadow@burst": {
+   "file": "fx/fx_travel.png",
+   "x": 0,
+   "y": 256,
+   "w": 96,
+   "h": 64,
+   "pivotX": 48,
+   "pivotY": 32,
+   "frames": 6
+  },
+  "aura.buff@loop": {
+   "file": "fx/fx_travel.png",
+   "x": 576,
+   "y": 0,
+   "w": 64,
+   "h": 64,
+   "pivotX": 32,
+   "pivotY": 32,
+   "frames": 6
+  },
+  "aura.curse@loop": {
+   "file": "fx/fx_travel.png",
+   "x": 576,
+   "y": 64,
+   "w": 64,
+   "h": 64,
+   "pivotX": 32,
+   "pivotY": 32,
+   "frames": 6
+  },
+  "end.defeat": {
+   "file": "fx/fx2_big.png",
+   "x": 560,
+   "y": 560,
+   "w": 112,
+   "h": 112,
+   "pivotX": 56,
+   "pivotY": 56
+  },
+  "end.defeat@appear": {
+   "file": "fx/fx2_big.png",
+   "x": 0,
+   "y": 560,
+   "w": 112,
+   "h": 112,
+   "pivotX": 56,
+   "pivotY": 56,
+   "frames": 5
+  },
+  "end.victory": {
+   "file": "fx/fx2_big.png",
+   "x": 560,
+   "y": 672,
+   "w": 112,
+   "h": 112,
+   "pivotX": 56,
+   "pivotY": 56
+  },
+  "end.victory@appear": {
+   "file": "fx/fx2_big.png",
+   "x": 0,
+   "y": 672,
+   "w": 112,
+   "h": 112,
+   "pivotX": 56,
+   "pivotY": 56,
+   "frames": 5
+  },
+  "gen.death@burst": {
+   "file": "fx/fx_status.png",
+   "x": 0,
+   "y": 288,
+   "w": 96,
+   "h": 96,
+   "pivotX": 48,
+   "pivotY": 48,
+   "frames": 5
+  },
+  "gen.lethal@burst": {
+   "file": "fx/fx_status.png",
+   "x": 576,
+   "y": 0,
+   "w": 96,
+   "h": 96,
+   "pivotX": 48,
+   "pivotY": 48,
+   "frames": 4
+  },
+  "gen.mindControl@burst": {
+   "file": "fx/fx2_kw.png",
+   "x": 1248,
+   "y": 96,
+   "w": 96,
+   "h": 96,
+   "pivotX": 48,
+   "pivotY": 48,
+   "frames": 5
+  },
+  "gen.overload@burst": {
+   "file": "fx/fx2_kw.png",
+   "x": 672,
+   "y": 96,
+   "w": 96,
+   "h": 96,
+   "pivotX": 48,
+   "pivotY": 48,
+   "frames": 6
+  },
+  "gen.summon@burst": {
+   "file": "fx/fx_status.png",
+   "x": 480,
+   "y": 288,
+   "w": 96,
+   "h": 96,
+   "pivotX": 48,
+   "pivotY": 48,
+   "frames": 5
+  },
+  "gen.weaponBreak@burst": {
+   "file": "fx/fx2_kw.png",
+   "x": 1152,
+   "y": 384,
+   "w": 96,
+   "h": 96,
+   "pivotX": 48,
+   "pivotY": 48,
+   "frames": 5
+  },
+  "gen.weaponEquip@burst": {
+   "file": "fx/fx2_kw.png",
+   "x": 1344,
+   "y": 0,
+   "w": 96,
+   "h": 96,
+   "pivotX": 48,
+   "pivotY": 48,
+   "frames": 4
+  },
+  "impact.blood@burst": {
+   "file": "fx/fx2_school.png",
+   "x": 0,
+   "y": 0,
+   "w": 96,
+   "h": 96,
+   "pivotX": 48,
+   "pivotY": 48,
+   "frames": 6
+  },
+  "impact.crush@burst": {
+   "file": "fx/fx_impact.png",
+   "x": 1152,
+   "y": 480,
+   "w": 96,
+   "h": 96,
+   "pivotX": 48,
+   "pivotY": 48,
+   "frames": 4
+  },
+  "impact.earth@burst": {
+   "file": "fx/fx2_school.png",
+   "x": 576,
+   "y": 0,
+   "w": 96,
+   "h": 96,
+   "pivotX": 48,
+   "pivotY": 48,
+   "frames": 6
+  },
+  "impact.necro@burst": {
+   "file": "fx/fx_impact.png",
+   "x": 1152,
+   "y": 384,
+   "w": 96,
+   "h": 96,
+   "pivotX": 48,
+   "pivotY": 48,
+   "frames": 5
+  },
+  "impact.runes@burst": {
+   "file": "fx/fx_impact.png",
+   "x": 0,
+   "y": 384,
+   "w": 96,
+   "h": 96,
+   "pivotX": 48,
+   "pivotY": 48,
+   "frames": 6
+  },
+  "impact.sonic@burst": {
+   "file": "fx/fx2_school.png",
+   "x": 0,
+   "y": 96,
+   "w": 96,
+   "h": 96,
+   "pivotX": 48,
+   "pivotY": 48,
+   "frames": 6
+  },
+  "impact.void@burst": {
+   "file": "fx/fx2_school.png",
+   "x": 576,
+   "y": 96,
+   "w": 96,
+   "h": 96,
+   "pivotX": 48,
+   "pivotY": 48,
+   "frames": 6
+  },
+  "impact.water@burst": {
+   "file": "fx/fx2_school.png",
+   "x": 0,
+   "y": 192,
+   "w": 96,
+   "h": 96,
+   "pivotX": 48,
+   "pivotY": 48,
+   "frames": 6
+  },
+  "impact.wind@burst": {
+   "file": "fx/fx2_school.png",
+   "x": 576,
+   "y": 192,
+   "w": 96,
+   "h": 96,
+   "pivotX": 48,
+   "pivotY": 48,
+   "frames": 5
+  },
+  "legend.fire@burst": {
+   "file": "fx/fx2_big.png",
+   "x": 0,
+   "y": 784,
+   "w": 112,
+   "h": 112,
+   "pivotX": 56,
+   "pivotY": 56,
+   "frames": 5
+  },
+  "legend.frost@burst": {
+   "file": "fx/fx2_big.png",
+   "x": 0,
+   "y": 0,
+   "w": 112,
+   "h": 112,
+   "pivotX": 56,
+   "pivotY": 56,
+   "frames": 6
+  },
+  "legend.holy@burst": {
+   "file": "fx/fx2_big.png",
+   "x": 0,
+   "y": 112,
+   "w": 112,
+   "h": 112,
+   "pivotX": 56,
+   "pivotY": 56,
+   "frames": 6
+  },
+  "legend.nature@burst": {
+   "file": "fx/fx2_big.png",
+   "x": 0,
+   "y": 224,
+   "w": 112,
+   "h": 112,
+   "pivotX": 56,
+   "pivotY": 56,
+   "frames": 6
+  },
+  "legend.shadow@burst": {
+   "file": "fx/fx2_big.png",
+   "x": 0,
+   "y": 336,
+   "w": 112,
+   "h": 112,
+   "pivotX": 56,
+   "pivotY": 56,
+   "frames": 6
+  },
+  "legend.storm@burst": {
+   "file": "fx/fx2_big.png",
+   "x": 0,
+   "y": 448,
+   "w": 112,
+   "h": 112,
+   "pivotX": 56,
+   "pivotY": 56,
+   "frames": 6
+  },
+  "look.avatar@burst": {
+   "file": "fx/fx2_kw.png",
+   "x": 0,
+   "y": 192,
+   "w": 96,
+   "h": 96,
+   "pivotX": 48,
+   "pivotY": 48,
+   "frames": 6
+  },
+  "look.awaken@burst": {
+   "file": "fx/fx2_kw.png",
+   "x": 0,
+   "y": 0,
+   "w": 96,
+   "h": 96,
+   "pivotX": 48,
+   "pivotY": 48,
+   "frames": 7
+  },
+  "look.form@burst": {
+   "file": "fx/fx2_kw.png",
+   "x": 672,
+   "y": 0,
+   "w": 96,
+   "h": 96,
+   "pivotX": 48,
+   "pivotY": 48,
+   "frames": 7
+  },
+  "look.incarnation@burst": {
+   "file": "fx/fx2_kw.png",
+   "x": 0,
+   "y": 96,
+   "w": 96,
+   "h": 96,
+   "pivotX": 48,
+   "pivotY": 48,
+   "frames": 7
+  },
+  "look.revert@burst": {
+   "file": "fx/fx2_kw.png",
+   "x": 576,
+   "y": 192,
+   "w": 96,
+   "h": 96,
+   "pivotX": 48,
+   "pivotY": 48,
+   "frames": 6
+  },
+  "proj.arcane@fly": {
+   "file": "fx/fx_travel.png",
+   "x": 576,
+   "y": 128,
+   "w": 64,
+   "h": 64,
+   "pivotX": 32,
+   "pivotY": 32,
+   "frames": 6
+  },
+  "proj.arrow": {
+   "file": "fx/fx_travel.png",
+   "x": 864,
+   "y": 320,
+   "w": 64,
+   "h": 64,
+   "pivotX": 32,
+   "pivotY": 32
+  },
+  "proj.blood@fly": {
+   "file": "fx/fx2_school.png",
+   "x": 0,
+   "y": 352,
+   "w": 64,
+   "h": 64,
+   "pivotX": 32,
+   "pivotY": 32,
+   "frames": 6
+  },
+  "proj.earth@fly": {
+   "file": "fx/fx2_school.png",
+   "x": 384,
+   "y": 352,
+   "w": 64,
+   "h": 64,
+   "pivotX": 32,
+   "pivotY": 32,
+   "frames": 6
+  },
+  "proj.fire@fly": {
+   "file": "fx/fx_travel.png",
+   "x": 576,
+   "y": 192,
+   "w": 64,
+   "h": 64,
+   "pivotX": 32,
+   "pivotY": 32,
+   "frames": 6
+  },
+  "proj.frost@fly": {
+   "file": "fx/fx_travel.png",
+   "x": 576,
+   "y": 256,
+   "w": 64,
+   "h": 64,
+   "pivotX": 32,
+   "pivotY": 32,
+   "frames": 6
+  },
+  "proj.holy@fly": {
+   "file": "fx/fx_travel.png",
+   "x": 480,
+   "y": 320,
+   "w": 64,
+   "h": 64,
+   "pivotX": 32,
+   "pivotY": 32,
+   "frames": 6
+  },
+  "proj.lightning@fly": {
+   "file": "fx/fx_travel.png",
+   "x": 0,
+   "y": 384,
+   "w": 64,
+   "h": 64,
+   "pivotX": 32,
+   "pivotY": 32,
+   "frames": 6
+  },
+  "proj.nature@fly": {
+   "file": "fx/fx_travel.png",
+   "x": 384,
+   "y": 384,
+   "w": 64,
+   "h": 64,
+   "pivotX": 32,
+   "pivotY": 32,
+   "frames": 6
+  },
+  "proj.runes@fly": {
+   "file": "fx/fx_travel.png",
+   "x": 0,
+   "y": 448,
+   "w": 64,
+   "h": 64,
+   "pivotX": 32,
+   "pivotY": 32,
+   "frames": 6
+  },
+  "proj.shadow@fly": {
+   "file": "fx/fx_travel.png",
+   "x": 384,
+   "y": 448,
+   "w": 64,
+   "h": 64,
+   "pivotX": 32,
+   "pivotY": 32,
+   "frames": 6
+  },
+  "proj.sonic@fly": {
+   "file": "fx/fx2_school.png",
+   "x": 768,
+   "y": 352,
+   "w": 64,
+   "h": 64,
+   "pivotX": 32,
+   "pivotY": 32,
+   "frames": 6
+  },
+  "proj.void@fly": {
+   "file": "fx/fx2_school.png",
+   "x": 0,
+   "y": 416,
+   "w": 64,
+   "h": 64,
+   "pivotX": 32,
+   "pivotY": 32,
+   "frames": 6
+  },
+  "proj.water@fly": {
+   "file": "fx/fx2_school.png",
+   "x": 384,
+   "y": 416,
+   "w": 64,
+   "h": 64,
+   "pivotX": 32,
+   "pivotY": 32,
+   "frames": 6
+  },
+  "proj.wind@fly": {
+   "file": "fx/fx2_school.png",
+   "x": 768,
+   "y": 416,
+   "w": 64,
+   "h": 64,
+   "pivotX": 32,
+   "pivotY": 32,
+   "frames": 6
+  },
+  "quest.done@burst": {
+   "file": "fx/fx2_kw.png",
+   "x": 1152,
+   "y": 192,
+   "w": 96,
+   "h": 96,
+   "pivotX": 48,
+   "pivotY": 48,
+   "frames": 6
+  },
+  "status.armor@break": {
+   "file": "fx/fx2_kw.png",
+   "x": 960,
+   "y": 576,
+   "w": 96,
+   "h": 96,
+   "pivotX": 48,
+   "pivotY": 48,
+   "frames": 4
+  },
+  "status.armor@gain": {
+   "file": "fx/fx2_kw.png",
+   "x": 0,
+   "y": 480,
+   "w": 96,
+   "h": 96,
+   "pivotX": 48,
+   "pivotY": 48,
+   "frames": 5
+  },
+  "status.battlecry@burst": {
+   "file": "fx/fx2_kw.png",
+   "x": 480,
+   "y": 480,
+   "w": 96,
+   "h": 96,
+   "pivotX": 48,
+   "pivotY": 48,
+   "frames": 5
+  },
+  "status.deathrattle@burst": {
+   "file": "fx/fx2_kw.png",
+   "x": 0,
+   "y": 288,
+   "w": 96,
+   "h": 96,
+   "pivotX": 48,
+   "pivotY": 48,
+   "frames": 6
+  },
+  "status.dshield": {
+   "file": "fx/fx_status.png",
+   "x": 576,
+   "y": 192,
+   "w": 96,
+   "h": 96,
+   "pivotX": 48,
+   "pivotY": 48
+  },
+  "status.dshield@appear": {
+   "file": "fx/fx_status.png",
+   "x": 0,
+   "y": 384,
+   "w": 96,
+   "h": 96,
+   "pivotX": 48,
+   "pivotY": 48,
+   "frames": 5
+  },
+  "status.dshield@idle": {
+   "file": "fx/fx_status.png",
+   "x": 0,
+   "y": 0,
+   "w": 96,
+   "h": 96,
+   "pivotX": 48,
+   "pivotY": 48,
+   "frames": 6
+  },
+  "status.dshield@shatter": {
+   "file": "fx/fx_status.png",
+   "x": 0,
+   "y": 96,
+   "w": 96,
+   "h": 96,
+   "pivotX": 48,
+   "pivotY": 48,
+   "frames": 6
+  },
+  "status.freeze": {
+   "file": "fx/fx_status.png",
+   "x": 672,
+   "y": 192,
+   "w": 96,
+   "h": 96,
+   "pivotX": 48,
+   "pivotY": 48
+  },
+  "status.freeze@glint": {
+   "file": "fx/fx_status.png",
+   "x": 576,
+   "y": 96,
+   "w": 96,
+   "h": 96,
+   "pivotX": 48,
+   "pivotY": 48,
+   "frames": 4
+  },
+  "status.freeze@shatter": {
+   "file": "fx/fx_status.png",
+   "x": 0,
+   "y": 192,
+   "w": 96,
+   "h": 96,
+   "pivotX": 48,
+   "pivotY": 48,
+   "frames": 6
+  },
+  "status.freezeHero": {
+   "file": "fx/fx_status.png",
+   "x": 768,
+   "y": 192,
+   "w": 96,
+   "h": 96,
+   "pivotX": 48,
+   "pivotY": 48
+  },
+  "status.freezeHero@shatter": {
+   "file": "fx/fx_status.png",
+   "x": 480,
+   "y": 384,
+   "w": 96,
+   "h": 96,
+   "pivotX": 48,
+   "pivotY": 48,
+   "frames": 5
+  },
+  "status.secret@break": {
+   "file": "fx/fx2_kw.png",
+   "x": 576,
+   "y": 288,
+   "w": 96,
+   "h": 96,
+   "pivotX": 48,
+   "pivotY": 48,
+   "frames": 6
+  },
+  "status.secret@set": {
+   "file": "fx/fx2_kw.png",
+   "x": 960,
+   "y": 480,
+   "w": 96,
+   "h": 96,
+   "pivotX": 48,
+   "pivotY": 48,
+   "frames": 5
+  },
+  "status.silence": {
+   "file": "fx/fx2_kw.png",
+   "x": 1632,
+   "y": 384,
+   "w": 96,
+   "h": 96,
+   "pivotX": 48,
+   "pivotY": 48
+  },
+  "status.silence@burst": {
+   "file": "fx/fx2_kw.png",
+   "x": 1152,
+   "y": 288,
+   "w": 96,
+   "h": 96,
+   "pivotX": 48,
+   "pivotY": 48,
+   "frames": 6
+  },
+  "status.stealth@appear": {
+   "file": "fx/fx2_kw.png",
+   "x": 0,
+   "y": 576,
+   "w": 96,
+   "h": 96,
+   "pivotX": 48,
+   "pivotY": 48,
+   "frames": 5
+  },
+  "status.stealth@idle": {
+   "file": "fx/fx2_kw.png",
+   "x": 0,
+   "y": 384,
+   "w": 96,
+   "h": 96,
+   "pivotX": 48,
+   "pivotY": 48,
+   "frames": 6
+  },
+  "status.stealth@reveal": {
+   "file": "fx/fx2_kw.png",
+   "x": 480,
+   "y": 576,
+   "w": 96,
+   "h": 96,
+   "pivotX": 48,
+   "pivotY": 48,
+   "frames": 5
+  },
+  "status.taunt": {
+   "file": "fx/fx2_kw.png",
+   "x": 1440,
+   "y": 480,
+   "w": 96,
+   "h": 96,
+   "pivotX": 48,
+   "pivotY": 48
+  },
+  "status.taunt@slam": {
+   "file": "fx/fx2_kw.png",
+   "x": 576,
+   "y": 384,
+   "w": 96,
+   "h": 96,
+   "pivotX": 48,
+   "pivotY": 48,
+   "frames": 6
+  },
+  "vfx.arcane@burst": {
+   "file": "fx/fx_impact.png",
+   "x": 0,
+   "y": 0,
+   "w": 96,
+   "h": 96,
+   "pivotX": 48,
+   "pivotY": 48,
+   "frames": 8
+  },
+  "vfx.fire@burst": {
+   "file": "fx/fx_impact.png",
+   "x": 768,
+   "y": 0,
+   "w": 96,
+   "h": 96,
+   "pivotX": 48,
+   "pivotY": 48,
+   "frames": 8
+  },
+  "vfx.frost@burst": {
+   "file": "fx/fx_impact.png",
+   "x": 0,
+   "y": 96,
+   "w": 96,
+   "h": 96,
+   "pivotX": 48,
+   "pivotY": 48,
+   "frames": 8
+  },
+  "vfx.heal@burst": {
+   "file": "fx/fx_impact.png",
+   "x": 576,
+   "y": 384,
+   "w": 96,
+   "h": 96,
+   "pivotX": 48,
+   "pivotY": 48,
+   "frames": 6
+  },
+  "vfx.holy@burst": {
+   "file": "fx/fx_impact.png",
+   "x": 768,
+   "y": 96,
+   "w": 96,
+   "h": 96,
+   "pivotX": 48,
+   "pivotY": 48,
+   "frames": 8
+  },
+  "vfx.lightning@burst": {
+   "file": "fx/fx_impact.png",
+   "x": 0,
+   "y": 192,
+   "w": 96,
+   "h": 96,
+   "pivotX": 48,
+   "pivotY": 48,
+   "frames": 8
+  },
+  "vfx.nature@burst": {
+   "file": "fx/fx_impact.png",
+   "x": 768,
+   "y": 192,
+   "w": 96,
+   "h": 96,
+   "pivotX": 48,
+   "pivotY": 48,
+   "frames": 8
+  },
+  "vfx.poison@burst": {
+   "file": "fx/fx_impact.png",
+   "x": 0,
+   "y": 480,
+   "w": 96,
+   "h": 96,
+   "pivotX": 48,
+   "pivotY": 48,
+   "frames": 6
+  },
+  "vfx.shadow@burst": {
+   "file": "fx/fx_impact.png",
+   "x": 0,
+   "y": 288,
+   "w": 96,
+   "h": 96,
+   "pivotX": 48,
+   "pivotY": 48,
+   "frames": 8
+  },
+  "vfx.slash@burst": {
+   "file": "fx/fx_impact.png",
+   "x": 768,
+   "y": 288,
+   "w": 96,
+   "h": 96,
+   "pivotX": 48,
+   "pivotY": 48,
+   "frames": 8
+  },
+  "vfx.soul@burst": {
+   "file": "fx/fx_impact.png",
+   "x": 576,
+   "y": 480,
+   "w": 96,
+   "h": 96,
+   "pivotX": 48,
+   "pivotY": 48,
+   "frames": 6
+  }
+ },
+ "drop": [
+  "proj.arcane",
+  "proj.fire",
+  "proj.frost",
+  "proj.holy",
+  "proj.lightning",
+  "proj.nature",
+  "proj.shadow",
+  "vfx.arcane",
+  "vfx.buff",
+  "vfx.buff@burst",
+  "vfx.fire",
+  "vfx.frost",
+  "vfx.heal",
+  "vfx.holy",
+  "vfx.kw.battlecry",
+  "vfx.kw.battlecry@burst",
+  "vfx.kw.freeze",
+  "vfx.kw.freeze@burst",
+  "vfx.kw_battlecry",
+  "vfx.kw_battlecry@burst",
+  "vfx.kw_freeze",
+  "vfx.kw_freeze@burst",
+  "vfx.lightning",
+  "vfx.nature",
+  "vfx.poison",
+  "vfx.shadow",
+  "vfx.shield",
+  "vfx.shield@burst",
+  "vfx.slash",
+  "vfx.soul",
+  "vfx.summon",
+  "vfx.summon@burst"
+ ]
+}
