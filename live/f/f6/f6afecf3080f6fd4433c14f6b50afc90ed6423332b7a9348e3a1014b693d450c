@@ -1,0 +1,276 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Realmshard — Confidentialité</title>
+<meta name="description" content="Politique de confidentialité de Realmshard : données collectées, finalités, durées, sous-traitants et droits.">
+<meta name="robots" content="index,follow">
+<style>
+  :root{color-scheme:light dark;--bg:#f7f2e8;--fg:#2a1f14;--muted:#6b5a44;--line:#d9c9ab;--accent:#8a2a30;--box:#efe6d4}
+  @media (prefers-color-scheme:dark){:root{--bg:#16110c;--fg:#efe4cc;--muted:#b3a183;--line:#4a3a28;--accent:#e4a35a;--box:#211910}}
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.55 Georgia,"Times New Roman",serif}
+  main{max-width:760px;margin:0 auto;padding:24px 16px 48px}
+  nav.langs{display:flex;gap:12px;justify-content:flex-end;font:600 14px system-ui,sans-serif;margin-bottom:8px}
+  nav.langs a,a{color:var(--accent)}
+  h1{font-size:28px;margin:8px 0 4px}
+  h2{font-size:20px;margin:28px 0 8px;border-bottom:1px solid var(--line);padding-bottom:4px}
+  p.meta{color:var(--muted);font-size:14px;margin:0 0 16px}
+  table{width:100%;border-collapse:collapse;font-size:15px}
+  th,td{border:1px solid var(--line);padding:6px 8px;text-align:left;vertical-align:top}
+  th{background:var(--box)}
+  .todo{background:#ffe08a;color:#3a2a00;padding:0 4px;border-radius:3px;font-family:system-ui,sans-serif;font-size:14px}
+  footer{margin-top:32px;font-size:14px;color:var(--muted)}
+  @supports selector(:has(*)){
+    section.lang{display:none}
+    section.lang:target,body:not(:has(section.lang:target)) #fr{display:block}
+  }
+</style>
+</head>
+<body>
+<main>
+<nav class="langs" aria-label="Langue / Language / Sprache"><a href="#fr" hreflang="fr">Français</a><a href="#en" hreflang="en">English</a><a href="#de" hreflang="de">Deutsch</a></nav>
+
+<section class="lang" id="fr" lang="fr">
+<h1>Politique de confidentialité</h1>
+<p class="meta">Realmshard (bêta) — dernière mise à jour : 6 novembre 2026</p>
+
+<h2>Qui est responsable ?</h2>
+<p>Responsable du traitement : l’éditeur de Realmshard, particulier agissant à titre non professionnel (voir les <a href="mentions-legales.html#fr">mentions légales</a>).<br>
+Contact pour toute question sur tes données : <a href="mailto:pikafpv@gmail.com">pikafpv@gmail.com</a>.</p>
+
+<h2>Ce que nous collectons</h2>
+<table>
+<tr><th>Données</th><th>Quand</th></tr>
+<tr><td><strong>Compte</strong> (nécessaire pour jouer : il n’y a plus de partie en invité) : nom de joueur, adresse e-mail, identifiant technique du compte. Le mot de passe est chiffré par notre hébergeur ; nous ne le voyons jamais.</td><td>À la création du compte. Le nom de joueur est public (classements, adversaire en classé, Guerre des royaumes). L’e-mail n’est jamais affiché ; seule une forme masquée (« j***@gmail.com ») peut servir à te rappeler quelle adresse taper.</td></tr>
+<tr><td><strong>Sauvegardes</strong> : progression (collection, Or, Éclats, parties en cours, réglages).</td><td>Sur ton appareil, et dans le nuage quand tu es connecté.</td></tr>
+<tr><td><strong>Classements</strong> : scores d’Histoire, Couronnes, Défi du jour, cote classée, avec ton nom de joueur.</td><td>À la fin d’une partie, seulement avec un e-mail confirmé.</td></tr>
+<tr><td><strong>Journaux de parties classées</strong> : decks, coups joués, résultat.</td><td>Pendant une partie classée, pour vérifier le résultat et lutter contre la triche.</td></tr>
+<tr><td><strong>Signalements</strong> (bug ou nom de joueur) : catégorie, description, nom de joueur, identifiant du compte, contexte technique (version du jeu, navigateur et appareil, taille d’écran, heure locale et fuseau horaire, écran en cours, dernières erreurs sans e-mail ni jeton) et, si tu la coches, une capture d’écran (réservée aux comptes dont l’e-mail est confirmé).</td><td>Quand tu envoies un signalement.</td></tr>
+<tr><td><strong>Abonnements aux notifications</strong> : adresse d’abonnement fournie par ton navigateur ou ton téléphone, types de notifications choisis.</td><td>Seulement si tu actives les notifications.</td></tr>
+<tr><td><strong>Guerre des royaumes</strong> : allégeance, Renom envoyé, place dans le classement du royaume.</td><td>Quand tu y participes (e-mail confirmé).</td></tr>
+<tr><td><strong>Statistiques d’utilisation</strong> (facultatives, pseudonymes : rattachées à l’identifiant du compte, sans nom ni e-mail) : jours de jeu, grandes étapes (tutoriel terminé, premier booster…), plateforme, version.</td><td>Activées par défaut ; désactivables à tout moment dans Options › Sauvegarde › Compte.</td></tr>
+<tr><td><strong>Erreurs techniques</strong> : message d’erreur, version, type d’appareil.</td><td>Quand le jeu rencontre une erreur, pour la corriger.</td></tr>
+<tr><td><strong>Codes cadeaux</strong> : code utilisé, date.</td><td>Quand tu utilises un code.</td></tr>
+<tr><td><strong>Amis et messages</strong> : liste d’amis, demandes d’ami, joueurs bloqués, invitations en duel ; statut (en ligne, en partie, hors ligne), champion choisi et cote classée, visibles par tes amis seulement ; messages privés échangés avec tes amis (texte filtré : insultes et liens masqués), date, lu ou non.</td><td>Quand tu utilises la liste d’amis du menu principal. Les messages ne sont possibles qu’entre amis acceptés ; un joueur bloqué ne peut plus t’écrire, te défier ni te demander en ami.</td></tr>
+<tr><td><strong>Messages de guilde</strong> : messages écrits dans la discussion de ta guilde (texte filtré : insultes, liens et e-mails masqués), ton nom de joueur au moment de l’envoi, date ; dernier message lu ; silence éventuel décidé par le chef ou un officier (durée, nom et rang de qui l’a décidé).</td><td>Quand tu utilises l’onglet « Discussion » de l’écran Guildes. Seuls les membres actuels de la guilde lisent ses messages (un nouveau membre voit aussi ceux des 30 derniers jours) ; ceux d’un joueur que tu as bloqué te sont cachés.</td></tr>
+<tr><td><strong>Signalements de conversation</strong> (« Signaler ») : motif, ton nom de joueur et celui du joueur signalé, identifiants des comptes, les 20 derniers messages de la conversation (30 derniers jours) ; pour un message de guilde : la guilde (identifiant, nom) et les 20 derniers messages de sa discussion jusqu’au message signalé, avec le nom de leurs auteurs.</td><td>Quand tu signales un joueur depuis une conversation ou la discussion de guilde.</td></tr>
+<tr><td><strong>Protection contre les abus</strong> : empreinte hachée et salée de ton adresse IP (une pseudonymisation : jamais l’adresse elle-même) ; vérification anti-robot à l’inscription si elle est activée.</td><td>À la connexion par nom, à la vérification d’un nom, à l’inscription.</td></tr>
+</table>
+<p>Pas de publicité, pas de revente de données, pas de traceur publicitaire ni de cookie tiers. Le jeu garde ta sauvegarde et ta session dans le stockage local de ton navigateur ou de l’appli.</p>
+
+<h2>Pourquoi, et sur quelle base</h2>
+<ul>
+<li><strong>Faire fonctionner le jeu et ton compte</strong> (exécution du contrat, RGPD art. 6.1.b) : compte, sauvegardes, classements, classé, Guerre, cadeaux, liste d’amis, messages entre amis, discussion de guilde et invitations en duel.</li>
+<li><strong>Sécurité, lutte contre la triche et les abus</strong> (intérêt légitime, art. 6.1.f) : journaux de parties classées, limites de fréquence (dont celles des messages et des demandes d’ami), filtre des messages, blocages, silences dans les guildes, vérification anti-robot, signalements de noms et de conversations.</li>
+<li><strong>Améliorer le jeu</strong> (intérêt légitime, art. 6.1.f ; tu peux t’y opposer à tout moment avec l’interrupteur) : statistiques d’utilisation, erreurs techniques.</li>
+<li><strong>Notifications</strong> (consentement, art. 6.1.a) : retirable à tout moment dans Options › Jeu › Notifications.</li>
+<li><strong>Obligations légales</strong> (art. 6.1.c) : conservation des preuves d’achat quand les achats seront ouverts.</li>
+</ul>
+
+<h2>Combien de temps</h2>
+<table>
+<tr><th>Données</th><th>Durée</th></tr>
+<tr><td>Compte, profil, sauvegardes, classements, Guerre, cadeaux</td><td>Tant que le compte existe ; effacés dès que tu supprimes ton compte.</td></tr>
+<tr><td>Captures d’écran des signalements</td><td>30 jours.</td></tr>
+<tr><td>Texte et contexte des signalements</td><td>Le temps de les traiter. À la suppression du compte, le nom de joueur, l’identifiant du compte et la capture sont effacés ; le texte et le contexte technique restent, sans lien avec toi. Les copies reçues par e-mail par l’équipe (avec ton nom de joueur et l’identifiant du compte) sont effacées sur simple demande.</td></tr>
+<tr><td>Journaux des parties classées</td><td>30 jours après la fin de la partie.</td></tr>
+<tr><td>Erreurs techniques</td><td>30 jours.</td></tr>
+<tr><td>Messages entre amis</td><td>30 jours, puis effacement automatique (et dès la suppression de l’un des deux comptes).</td></tr>
+<tr><td>Messages de guilde</td><td>30 jours, puis effacement automatique (et dès la suppression de ton compte ou de la guilde). Silences : jusqu’à leur fin (7 jours au plus).</td></tr>
+<tr><td>Invitations en duel ; statut en ligne</td><td>Invitations : 1 jour. Statut : 30 jours sans connexion, puis effacé.</td></tr>
+<tr><td>Liste d’amis, demandes, blocages</td><td>Tant que le compte existe ; tu peux retirer un ami ou débloquer un joueur à tout moment.</td></tr>
+<tr><td>Signalements de conversation</td><td>6 mois, puis effacement automatique. À la suppression d’un compte, son identifiant est retiré du signalement ; le nom de joueur et les messages joints restent jusqu’à l’effacement (6 mois au plus).</td></tr>
+<tr><td>Statistiques d’utilisation (pseudonymes)</td><td>13 mois, puis effacement automatique.</td></tr>
+<tr><td>Anciens comptes invités (sans e-mail, créés par les versions précédentes) inutilisés : sans connexion, sans sauvegarde ni jour joué</td><td>30 jours.</td></tr>
+<tr><td>Empreinte d’adresse IP (limites anti-abus)</td><td>1 jour, puis effacement automatique.</td></tr>
+<tr><td>Abonnements aux notifications</td><td>Jusqu’à leur désactivation ou la suppression du compte.</td></tr>
+<tr><td>Preuves d’achat (quand les achats seront ouverts)</td><td>Durée légale de conservation comptable, sans lien avec un compte supprimé.</td></tr>
+</table>
+
+<h2>Qui y a accès (sous-traitants)</h2>
+<ul>
+<li><strong>Supabase</strong> : base de données, comptes, fonctions serveur. Région du projet : AWS eu-west-1 (Irlande, Union européenne).</li>
+<li><strong>GitHub</strong> (Pages et Releases) : hébergement du jeu, du site officiel et des fichiers à télécharger.</li>
+<li><strong>Brevo</strong> (Sendinblue SAS, France) : envoi des e-mails (confirmation de l’adresse, mot de passe oublié, signalements transmis à l’équipe).</li>
+<li><strong>Cloudflare Turnstile</strong> ou <strong>hCaptcha</strong> : vérification anti-robot, si elle est activée.</li>
+<li>Plus tard : <strong>Stripe</strong> (paiements sur le web) et <strong>Google Play</strong> (appli Android). Nous ne voyons jamais tes données bancaires.</li>
+</ul>
+<p>Certains de ces prestataires peuvent traiter des données hors de l’Union européenne ; ces transferts sont encadrés par les garanties prévues par le RGPD (clauses contractuelles types ou décision d’adéquation).</p>
+
+<h2>Le site officiel</h2>
+<p>Le site officiel (<a href="https://realmshard.fr/">realmshard.fr</a> : accueil, téléchargements, classes, FAQ, nouveautés, et le jeu sur realmshard.fr/jouer/) est hébergé par GitHub Pages ; l’ancienne adresse xavfrech-dev.github.io ne fait plus que rediriger vers realmshard.fr. Au premier passage par l’ancienne adresse, la progression gardée dans ton navigateur (parties, réglages) est recopiée vers realmshard.fr directement dans ton navigateur : elle n’est envoyée à aucun serveur et n’écrase jamais une partie déjà présente sur realmshard.fr (la partie de l’ancienne adresse est alors gardée à part, dans ton navigateur). Si tu ouvres realmshard.fr sans aucune partie, la page passe une seule fois par l’ancienne adresse pour y chercher ta progression. Comme pour toute page web, GitHub reçoit l’adresse IP des visiteurs et la garde dans ses journaux techniques, pour la sécurité et le bon fonctionnement du service (voir la déclaration de confidentialité de GitHub). Les fichiers à télécharger (applis Windows, macOS et Android) sont servis par GitHub depuis la page des versions du dépôt public du jeu, dans les mêmes conditions.</p>
+<p>Le site lui-même ne dépose aucun cookie, n’utilise aucun traceur ni outil de mesure d’audience, ne charge aucune police ni ressource externe et ne collecte aucune donnée personnelle. La bande-annonce n’est chargée que si tu cliques dessus, depuis le site lui-même. Seul ton choix de masquer la suggestion de langue est gardé, dans le stockage local de ton navigateur (clé « rs-site.langHint »).</p>
+
+<h2>Tes droits</h2>
+<p>Tu peux accéder à tes données, les rectifier (renommer ton compte), les effacer (Options › Sauvegarde › Compte › « Supprimer mon compte », ou la page <a href="supprimer-compte.html#fr">Supprimer mon compte</a>), en limiter l’usage, t’opposer aux statistiques (interrupteur), récupérer ta sauvegarde (Options › Sauvegarde › Exporter) et retirer ton consentement aux notifications. Écris-nous à l’adresse ci-dessus ; nous répondons sous un mois. Tu peux aussi saisir la CNIL (www.cnil.fr).</p>
+
+<h2>Âge</h2>
+<p>En France, l’âge du consentement numérique est de 15 ans. En dessous, la création d’un compte demande l’accord d’un titulaire de l’autorité parentale.</p>
+
+<footer><a href="mentions-legales.html#fr">Mentions légales</a> · <a href="supprimer-compte.html#fr">Supprimer mon compte</a> · <a href="a-propos.html#fr">À propos de la bêta</a> · <a href="./">Jouer</a></footer>
+</section>
+
+<section class="lang" id="en" lang="en">
+<h1>Privacy policy</h1>
+<p class="meta">Realmshard (beta) — last updated: 6 November 2026</p>
+
+<h2>Who is responsible?</h2>
+<p>Data controller: the publisher of Realmshard, a private individual acting on a non-professional basis (see the <a href="mentions-legales.html#en">legal notice</a>).<br>
+Contact for any question about your data: <a href="mailto:pikafpv@gmail.com">pikafpv@gmail.com</a>.</p>
+
+<h2>What we collect</h2>
+<table>
+<tr><th>Data</th><th>When</th></tr>
+<tr><td><strong>Account</strong> (needed to play: there is no guest play any more): player name, e-mail address, technical account id. The password is encrypted by our host; we never see it.</td><td>When the account is created. The player name is public (leaderboards, ranked opponent, War of the Three Realms). The e-mail is never shown; only a masked form (“j***@gmail.com”) may remind you which address to type.</td></tr>
+<tr><td><strong>Saves</strong>: progress (collection, Gold, Shards, runs in progress, settings).</td><td>On your device, and in the cloud while you are signed in.</td></tr>
+<tr><td><strong>Leaderboards</strong>: Story scores, Crowns, Daily Challenge, ranked rating, with your player name.</td><td>At the end of a game, only with a confirmed e-mail.</td></tr>
+<tr><td><strong>Ranked game logs</strong>: decks, moves, result.</td><td>During a ranked game, to verify the result and fight cheating.</td></tr>
+<tr><td><strong>Reports</strong> (bug or player name): category, description, player name, account id, technical context (game version, browser and device, screen size, local time and time zone, current screen, latest errors without e-mails or tokens) and, if you tick it, a screenshot (only for accounts with a confirmed e-mail).</td><td>When you send a report.</td></tr>
+<tr><td><strong>Notification subscriptions</strong>: subscription address given by your browser or phone, chosen notification types.</td><td>Only if you turn notifications on.</td></tr>
+<tr><td><strong>War of the Three Realms</strong>: allegiance, Renown sent, rank in your realm’s board.</td><td>When you take part (confirmed e-mail).</td></tr>
+<tr><td><strong>Usage statistics</strong> (optional, pseudonymous: linked to the account ID, with no name or e-mail): days played, key milestones (tutorial done, first pack…), platform, version.</td><td>On by default; can be turned off at any time in Options › Save › Account.</td></tr>
+<tr><td><strong>Technical errors</strong>: error message, version, device type.</td><td>When the game hits an error, to fix it.</td></tr>
+<tr><td><strong>Gift codes</strong>: code used, date.</td><td>When you redeem a code.</td></tr>
+<tr><td><strong>Friends and messages</strong>: friends list, friend requests, blocked players, duel invites; status (online, in a game, offline), chosen champion and ranked rating, visible to your friends only; private messages exchanged with your friends (filtered text: insults and links masked), date, read or not.</td><td>When you use the friends list of the main menu. Messages are only possible between accepted friends; a blocked player can no longer write to you, challenge you or send you a friend request.</td></tr>
+<tr><td><strong>Guild messages</strong>: messages written in your guild’s chat (filtered text: insults, links and e-mails masked), your player name when sent, date; last message read; a possible mute decided by the guild leader or an officer (length, name and rank of who decided it).</td><td>When you use the “Chat” tab of the Guilds screen. Only the current members of the guild read its messages (a new member also sees those of the last 30 days); those of a player you blocked are hidden from you.</td></tr>
+<tr><td><strong>Conversation reports</strong> (“Report”): reason, your player name and the reported player’s, account ids, the last 20 messages of the conversation (last 30 days); for a guild message: the guild (id, name) and the last 20 messages of its chat up to the reported one, with their authors’ names.</td><td>When you report a player from a conversation or the guild chat.</td></tr>
+<tr><td><strong>Abuse protection</strong>: salted, hashed fingerprint of your IP address (pseudonymisation: never the address itself); anti-bot check at sign-up when it is enabled.</td><td>On sign-in by name, name checks, sign-up.</td></tr>
+</table>
+<p>No ads, no sale of data, no advertising trackers or third-party cookies. The game keeps your save and session in your browser’s or the app’s local storage.</p>
+
+<h2>Why, and on what basis</h2>
+<ul>
+<li><strong>Running the game and your account</strong> (performance of the contract, GDPR art. 6.1.b): account, saves, leaderboards, ranked, War, gifts, friends list, messages between friends, guild chat and duel invites.</li>
+<li><strong>Security, anti-cheat and anti-abuse</strong> (legitimate interest, art. 6.1.f): ranked game logs, rate limits (including those on messages and friend requests), message filter, blocks, guild mutes, anti-bot check, name and conversation reports.</li>
+<li><strong>Improving the game</strong> (legitimate interest, art. 6.1.f; you can object at any time with the switch): usage statistics, technical errors.</li>
+<li><strong>Notifications</strong> (consent, art. 6.1.a): can be withdrawn at any time in Options › Game › Notifications.</li>
+<li><strong>Legal obligations</strong> (art. 6.1.c): keeping proof of purchase once purchases open.</li>
+</ul>
+
+<h2>How long</h2>
+<table>
+<tr><th>Data</th><th>Retention</th></tr>
+<tr><td>Account, profile, saves, leaderboards, War, gifts</td><td>As long as the account exists; erased as soon as you delete your account.</td></tr>
+<tr><td>Report screenshots</td><td>30 days.</td></tr>
+<tr><td>Report text and context</td><td>While they are handled. When the account is deleted, the player name, the account id and the screenshot are erased; the text and technical context remain, unlinked from you. The copies the team received by e-mail (with your player name and account id) are erased on request.</td></tr>
+<tr><td>Ranked game logs</td><td>30 days after the end of the game.</td></tr>
+<tr><td>Technical errors</td><td>30 days.</td></tr>
+<tr><td>Messages between friends</td><td>30 days, then erased automatically (and as soon as either account is deleted).</td></tr>
+<tr><td>Guild messages</td><td>30 days, then erased automatically (and as soon as your account or the guild is deleted). Mutes: until they end (7 days at most).</td></tr>
+<tr><td>Duel invites; online status</td><td>Invites: 1 day. Status: 30 days without signing in, then erased.</td></tr>
+<tr><td>Friends list, requests, blocks</td><td>As long as the account exists; you can remove a friend or unblock a player at any time.</td></tr>
+<tr><td>Conversation reports</td><td>6 months, then erased automatically. When an account is deleted, its id is removed from the report; the player name and the attached messages stay until erasure (6 months at most).</td></tr>
+<tr><td>Usage statistics (pseudonymous)</td><td>13 months, then deleted automatically.</td></tr>
+<tr><td>Unused former guest accounts (no e-mail, created by earlier versions): no sign-in, no save, no day played</td><td>30 days.</td></tr>
+<tr><td>IP address fingerprint (abuse limits)</td><td>1 day, then erased automatically.</td></tr>
+<tr><td>Notification subscriptions</td><td>Until turned off or the account is deleted.</td></tr>
+<tr><td>Proof of purchase (once purchases open)</td><td>Legal accounting retention period, not linked to a deleted account.</td></tr>
+</table>
+
+<h2>Who has access (processors)</h2>
+<ul>
+<li><strong>Supabase</strong>: database, accounts, server functions. Project region: AWS eu-west-1 (Ireland, European Union).</li>
+<li><strong>GitHub</strong> (Pages and Releases): hosting of the game, the official site and the download files.</li>
+<li><strong>Brevo</strong> (Sendinblue SAS, France): sending e-mails (address confirmation, forgotten password, reports forwarded to the team).</li>
+<li><strong>Cloudflare Turnstile</strong> or <strong>hCaptcha</strong>: anti-bot check, when enabled.</li>
+<li>Later: <strong>Stripe</strong> (web payments) and <strong>Google Play</strong> (Android app). We never see your bank details.</li>
+</ul>
+<p>Some of these providers may process data outside the European Union; such transfers rely on the safeguards provided by the GDPR (standard contractual clauses or an adequacy decision).</p>
+
+<h2>The official site</h2>
+<p>The official site (<a href="https://realmshard.fr/">realmshard.fr</a>: home, downloads, classes, FAQ, news, and the game at realmshard.fr/jouer/) is hosted by GitHub Pages; the former address xavfrech-dev.github.io only redirects to realmshard.fr. The first time you go through the former address, the progress kept in your browser (games, settings) is copied to realmshard.fr inside your browser: it is sent to no server and never overwrites a game already on realmshard.fr (the former address’s game is then kept aside, in your browser). If you open realmshard.fr with no game at all, the page goes once through the former address to look for your progress. As with any web page, GitHub receives visitors’ IP addresses and keeps them in its technical logs, for the security and operation of the service (see GitHub’s privacy statement). The download files (Windows, macOS and Android apps) are served by GitHub from the releases page of the game’s public repository, under the same conditions.</p>
+<p>The site itself sets no cookies, uses no tracker or audience measurement, loads no external font or resource and collects no personal data. The trailer only loads if you click it, from the site itself. Only your choice to hide the language suggestion is kept, in your browser’s local storage (key “rs-site.langHint”).</p>
+
+<h2>Your rights</h2>
+<p>You can access your data, correct it (rename your account), erase it (Options › Save › Account › “Delete my account”, or the <a href="supprimer-compte.html#en">Delete my account</a> page), restrict its use, object to the statistics (switch), get your save back (Options › Save › Export) and withdraw your consent to notifications. Write to us at the address above; we answer within one month. You can also lodge a complaint with your data protection authority (in France, the CNIL: www.cnil.fr).</p>
+
+<h2>Age</h2>
+<p>In France, the age of digital consent is 15. Below that age, creating an account requires the agreement of a person with parental authority.</p>
+
+<footer><a href="mentions-legales.html#en">Legal notice</a> · <a href="supprimer-compte.html#en">Delete my account</a> · <a href="a-propos.html#en">About the beta</a> · <a href="./">Play</a></footer>
+</section>
+
+<section class="lang" id="de" lang="de">
+<h1>Datenschutzerklärung</h1>
+<p class="meta">Realmshard (Beta) — zuletzt aktualisiert: 6. November 2026</p>
+
+<h2>Wer ist verantwortlich?</h2>
+<p>Verantwortlicher: der Herausgeber von Realmshard, eine nicht gewerblich handelnde Privatperson (siehe <a href="mentions-legales.html#de">Impressum</a>).<br>
+Kontakt für alle Fragen zu deinen Daten: <a href="mailto:pikafpv@gmail.com">pikafpv@gmail.com</a>.</p>
+
+<h2>Was wir erheben</h2>
+<table>
+<tr><th>Daten</th><th>Wann</th></tr>
+<tr><td><strong>Konto</strong> (zum Spielen nötig: Spielen als Gast gibt es nicht mehr): Spielername, E-Mail-Adresse, technische Konto-ID. Das Passwort wird von unserem Anbieter verschlüsselt; wir sehen es nie.</td><td>Bei der Kontoerstellung. Der Spielername ist öffentlich (Ranglisten, Gegner im Ranglistenmodus, Krieg der Reiche). Die E-Mail wird nie angezeigt; nur eine maskierte Form („j***@gmail.com“) kann dich daran erinnern, welche Adresse du eingeben sollst.</td></tr>
+<tr><td><strong>Spielstände</strong>: Fortschritt (Sammlung, Gold, Splitter, laufende Partien, Einstellungen).</td><td>Auf deinem Gerät und in der Cloud, solange du angemeldet bist.</td></tr>
+<tr><td><strong>Ranglisten</strong>: Geschichte-Punkte, Kronen, Tagesherausforderung, Ranglistenwertung, mit deinem Spielernamen.</td><td>Am Ende einer Partie, nur mit bestätigter E-Mail.</td></tr>
+<tr><td><strong>Protokolle von Ranglistenpartien</strong>: Decks, Züge, Ergebnis.</td><td>Während einer Ranglistenpartie, um das Ergebnis zu prüfen und Betrug zu bekämpfen.</td></tr>
+<tr><td><strong>Meldungen</strong> (Fehler oder Spielername): Kategorie, Beschreibung, Spielername, Konto-ID, technischer Kontext (Spielversion, Browser und Gerät, Bildschirmgröße, Ortszeit und Zeitzone, aktueller Bildschirm, letzte Fehler ohne E-Mails oder Tokens) und, wenn du es ankreuzt, ein Bildschirmfoto (nur für Konten mit bestätigter E-Mail).</td><td>Wenn du eine Meldung sendest.</td></tr>
+<tr><td><strong>Benachrichtigungs-Abos</strong>: Abo-Adresse deines Browsers oder Telefons, gewählte Benachrichtigungsarten.</td><td>Nur wenn du Benachrichtigungen einschaltest.</td></tr>
+<tr><td><strong>Krieg der Reiche</strong>: Treue, gesendeter Ruhm, Platz in der Rangliste deines Reichs.</td><td>Wenn du teilnimmst (bestätigte E-Mail).</td></tr>
+<tr><td><strong>Nutzungsstatistiken</strong> (freiwillig, pseudonym: mit der Konto-ID verknüpft, ohne Namen oder E-Mail): Spieltage, wichtige Meilensteine (Tutorial beendet, erster Booster …), Plattform, Version.</td><td>Standardmäßig an; jederzeit abschaltbar unter Optionen › Speichern › Konto.</td></tr>
+<tr><td><strong>Technische Fehler</strong>: Fehlermeldung, Version, Gerätetyp.</td><td>Wenn das Spiel auf einen Fehler stößt, um ihn zu beheben.</td></tr>
+<tr><td><strong>Geschenkcodes</strong>: eingelöster Code, Datum.</td><td>Wenn du einen Code einlöst.</td></tr>
+<tr><td><strong>Freunde und Nachrichten</strong>: Freundesliste, Freundschaftsanfragen, blockierte Spieler, Duell-Einladungen; Status (online, im Spiel, offline), gewählter Champion und Ranglistenwertung, nur für deine Freunde sichtbar; private Nachrichten mit deinen Freunden (gefilterter Text: Beleidigungen und Links verdeckt), Datum, gelesen oder nicht.</td><td>Wenn du die Freundesliste im Hauptmenü benutzt. Nachrichten sind nur zwischen bestätigten Freunden möglich; ein blockierter Spieler kann dir nicht mehr schreiben, dich herausfordern oder dir eine Freundschaftsanfrage senden.</td></tr>
+<tr><td><strong>Gildennachrichten</strong>: Nachrichten im Chat deiner Gilde (gefilterter Text: Beleidigungen, Links und E-Mails verdeckt), dein Spielername beim Senden, Datum; zuletzt gelesene Nachricht; eine eventuelle Stummschaltung durch den Gildenleiter oder einen Offizier (Dauer, Name und Rang der Person, die sie verhängt hat).</td><td>Wenn du den Tab „Chat“ im Gildenbildschirm benutzt. Nur die aktuellen Mitglieder der Gilde lesen ihre Nachrichten (ein neues Mitglied sieht auch die der letzten 30 Tage); die eines Spielers, den du blockiert hast, werden dir nicht angezeigt.</td></tr>
+<tr><td><strong>Meldungen von Gesprächen</strong> („Melden“): Grund, dein Spielername und der des gemeldeten Spielers, Konto-IDs, die letzten 20 Nachrichten des Gesprächs (letzte 30 Tage); bei einer Gildennachricht: die Gilde (ID, Name) und die letzten 20 Nachrichten ihres Chats bis zur gemeldeten, mit den Namen ihrer Verfasser.</td><td>Wenn du einen Spieler aus einem Gespräch oder dem Gildenchat heraus meldest.</td></tr>
+<tr><td><strong>Schutz vor Missbrauch</strong>: gesalzener, gehashter Fingerabdruck deiner IP-Adresse (Pseudonymisierung: nie die Adresse selbst); Bot-Prüfung bei der Registrierung, falls aktiviert.</td><td>Bei der Anmeldung per Name, der Namensprüfung, der Registrierung.</td></tr>
+</table>
+<p>Keine Werbung, kein Verkauf von Daten, keine Werbe-Tracker oder Drittanbieter-Cookies. Das Spiel speichert Spielstand und Sitzung im lokalen Speicher deines Browsers oder der App.</p>
+
+<h2>Wozu, und auf welcher Grundlage</h2>
+<ul>
+<li><strong>Betrieb des Spiels und deines Kontos</strong> (Vertragserfüllung, DSGVO Art. 6 Abs. 1 lit. b): Konto, Spielstände, Ranglisten, Ranglistenmodus, Krieg, Geschenke, Freundesliste, Nachrichten unter Freunden, Gildenchat und Duell-Einladungen.</li>
+<li><strong>Sicherheit, Schutz vor Betrug und Missbrauch</strong> (berechtigtes Interesse, Art. 6 Abs. 1 lit. f): Protokolle von Ranglistenpartien, Häufigkeitsgrenzen (auch für Nachrichten und Freundschaftsanfragen), Nachrichtenfilter, Blockierungen, Stummschaltungen in Gilden, Bot-Prüfung, Meldungen von Namen und Gesprächen.</li>
+<li><strong>Verbesserung des Spiels</strong> (berechtigtes Interesse, Art. 6 Abs. 1 lit. f; du kannst jederzeit per Schalter widersprechen): Nutzungsstatistiken, technische Fehler.</li>
+<li><strong>Benachrichtigungen</strong> (Einwilligung, Art. 6 Abs. 1 lit. a): jederzeit widerrufbar unter Optionen › Spiel › Benachrichtigungen.</li>
+<li><strong>Gesetzliche Pflichten</strong> (Art. 6 Abs. 1 lit. c): Aufbewahrung von Kaufbelegen, sobald Käufe möglich sind.</li>
+</ul>
+
+<h2>Wie lange</h2>
+<table>
+<tr><th>Daten</th><th>Dauer</th></tr>
+<tr><td>Konto, Profil, Spielstände, Ranglisten, Krieg, Geschenke</td><td>Solange das Konto besteht; gelöscht, sobald du dein Konto löschst.</td></tr>
+<tr><td>Bildschirmfotos von Meldungen</td><td>30 Tage.</td></tr>
+<tr><td>Text und Kontext von Meldungen</td><td>Für die Dauer der Bearbeitung. Bei der Kontolöschung werden Spielername, Konto-ID und Bildschirmfoto gelöscht; Text und technischer Kontext bleiben, ohne Bezug zu dir. Die Kopien, die das Team per E-Mail erhalten hat (mit deinem Spielernamen und der Konto-ID), werden auf Anfrage gelöscht.</td></tr>
+<tr><td>Protokolle von Ranglistenpartien</td><td>30 Tage nach Ende der Partie.</td></tr>
+<tr><td>Technische Fehler</td><td>30 Tage.</td></tr>
+<tr><td>Nachrichten unter Freunden</td><td>30 Tage, dann automatisch gelöscht (und sobald eines der beiden Konten gelöscht wird).</td></tr>
+<tr><td>Gildennachrichten</td><td>30 Tage, dann automatisch gelöscht (und sobald dein Konto oder die Gilde gelöscht wird). Stummschaltungen: bis zu ihrem Ende (höchstens 7 Tage).</td></tr>
+<tr><td>Duell-Einladungen; Online-Status</td><td>Einladungen: 1 Tag. Status: 30 Tage ohne Anmeldung, dann gelöscht.</td></tr>
+<tr><td>Freundesliste, Anfragen, Blockierungen</td><td>Solange das Konto besteht; du kannst jederzeit einen Freund entfernen oder einen Spieler freigeben.</td></tr>
+<tr><td>Meldungen von Gesprächen</td><td>6 Monate, dann automatisch gelöscht. Wird ein Konto gelöscht, wird seine ID aus der Meldung entfernt; Spielername und beigefügte Nachrichten bleiben bis zur Löschung (höchstens 6 Monate).</td></tr>
+<tr><td>Nutzungsstatistiken (pseudonym)</td><td>13 Monate, danach automatisch gelöscht.</td></tr>
+<tr><td>Ungenutzte frühere Gastkonten (ohne E-Mail, von älteren Versionen angelegt): keine Anmeldung, kein Spielstand, kein Spieltag</td><td>30 Tage.</td></tr>
+<tr><td>Fingerabdruck der IP-Adresse (Missbrauchsgrenzen)</td><td>1 Tag, danach automatisch gelöscht.</td></tr>
+<tr><td>Benachrichtigungs-Abos</td><td>Bis zur Abmeldung oder Kontolöschung.</td></tr>
+<tr><td>Kaufbelege (sobald Käufe möglich sind)</td><td>Gesetzliche Aufbewahrungsfrist, ohne Verknüpfung mit einem gelöschten Konto.</td></tr>
+</table>
+
+<h2>Wer Zugriff hat (Auftragsverarbeiter)</h2>
+<ul>
+<li><strong>Supabase</strong>: Datenbank, Konten, Serverfunktionen. Region des Projekts: AWS eu-west-1 (Irland, Europäische Union).</li>
+<li><strong>GitHub</strong> (Pages und Releases): Hosting des Spiels, der offiziellen Website und der Download-Dateien.</li>
+<li><strong>Brevo</strong> (Sendinblue SAS, Frankreich): Versand von E-Mails (Bestätigung der Adresse, Passwort vergessen, an das Team weitergeleitete Meldungen).</li>
+<li><strong>Cloudflare Turnstile</strong> oder <strong>hCaptcha</strong>: Bot-Prüfung, falls aktiviert.</li>
+<li>Später: <strong>Stripe</strong> (Zahlungen im Web) und <strong>Google Play</strong> (Android-App). Deine Bankdaten sehen wir nie.</li>
+</ul>
+<p>Einige dieser Anbieter können Daten außerhalb der Europäischen Union verarbeiten; solche Übermittlungen stützen sich auf die Garantien der DSGVO (Standardvertragsklauseln oder Angemessenheitsbeschluss).</p>
+
+<h2>Die offizielle Website</h2>
+<p>Die offizielle Website (<a href="https://realmshard.fr/">realmshard.fr</a>: Start, Downloads, Klassen, FAQ, Neuigkeiten und das Spiel unter realmshard.fr/jouer/) wird von GitHub Pages gehostet; die frühere Adresse xavfrech-dev.github.io leitet nur noch auf realmshard.fr weiter. Beim ersten Aufruf der früheren Adresse wird der in deinem Browser gespeicherte Fortschritt (Spielstände, Einstellungen) direkt in deinem Browser nach realmshard.fr kopiert: Er wird an keinen Server gesendet und überschreibt nie einen Spielstand, der auf realmshard.fr schon vorhanden ist (der Spielstand der früheren Adresse wird dann getrennt in deinem Browser aufbewahrt). Öffnest du realmshard.fr ohne jeden Spielstand, geht die Seite einmalig über die frühere Adresse, um deinen Fortschritt zu suchen. Wie bei jeder Webseite erhält GitHub die IP-Adresse der Besucher und speichert sie in seinen technischen Protokollen, für Sicherheit und Betrieb des Dienstes (siehe die Datenschutzerklärung von GitHub). Die Download-Dateien (Apps für Windows, macOS und Android) liefert GitHub von der Versionsseite des öffentlichen Repositorys des Spiels aus, zu denselben Bedingungen.</p>
+<p>Die Website selbst setzt keine Cookies, nutzt keine Tracker oder Reichweitenmessung, lädt keine externen Schriften oder Ressourcen und erhebt keine personenbezogenen Daten. Der Trailer wird erst beim Klick geladen, von der Website selbst. Gespeichert wird nur deine Wahl, den Sprachhinweis auszublenden, im lokalen Speicher deines Browsers (Schlüssel „rs-site.langHint“).</p>
+
+<h2>Deine Rechte</h2>
+<p>Du kannst deine Daten einsehen, berichtigen (Konto umbenennen), löschen (Optionen › Speichern › Konto › „Mein Konto löschen“ oder die Seite <a href="supprimer-compte.html#de">Konto löschen</a>), ihre Verarbeitung einschränken, den Statistiken widersprechen (Schalter), deinen Spielstand mitnehmen (Optionen › Speichern › Exportieren) und deine Einwilligung zu Benachrichtigungen widerrufen. Schreib uns an die obige Adresse; wir antworten innerhalb eines Monats. Du kannst dich auch bei einer Datenschutzaufsichtsbehörde beschweren (in Frankreich: CNIL, www.cnil.fr).</p>
+
+<h2>Alter</h2>
+<p>In Frankreich liegt das Alter der digitalen Einwilligung bei 15 Jahren. Darunter braucht die Kontoerstellung die Zustimmung eines Sorgeberechtigten.</p>
+
+<footer><a href="mentions-legales.html#de">Impressum</a> · <a href="supprimer-compte.html#de">Konto löschen</a> · <a href="a-propos.html#de">Über die Beta</a> · <a href="./">Spielen</a></footer>
+</section>
+</main>
+</body>
+</html>
