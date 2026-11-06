@@ -1,0 +1,131 @@
+{
+  "image": "midgard.png",
+  "width": 512,
+  "height": 512,
+  "frames": {
+    "midgard.bg.sky": {
+      "x": 1,
+      "y": 1,
+      "w": 320,
+      "h": 96
+    },
+    "midgard.bg.mid": {
+      "x": 1,
+      "y": 98,
+      "w": 320,
+      "h": 64
+    },
+    "midgard.berserker.idle.0": {
+      "x": 322,
+      "y": 98,
+      "w": 32,
+      "h": 48,
+      "pivotX": 16,
+      "pivotY": 47,
+      "animation": "midgard.berserker.idle",
+      "animationIndex": 0
+    },
+    "midgard.berserker.idle.1": {
+      "x": 355,
+      "y": 98,
+      "w": 32,
+      "h": 48,
+      "pivotX": 16,
+      "pivotY": 47,
+      "animation": "midgard.berserker.idle",
+      "animationIndex": 1
+    },
+    "midgard.berserker.idle.2": {
+      "x": 388,
+      "y": 98,
+      "w": 32,
+      "h": 48,
+      "pivotX": 16,
+      "pivotY": 47,
+      "animation": "midgard.berserker.idle",
+      "animationIndex": 2
+    },
+    "midgard.berserker.idle.3": {
+      "x": 421,
+      "y": 98,
+      "w": 32,
+      "h": 48,
+      "pivotX": 16,
+      "pivotY": 47,
+      "animation": "midgard.berserker.idle",
+      "animationIndex": 3
+    },
+    "midgard.skald.idle.0": {
+      "x": 454,
+      "y": 98,
+      "w": 32,
+      "h": 48,
+      "pivotX": 16,
+      "pivotY": 47,
+      "animation": "midgard.skald.idle",
+      "animationIndex": 0
+    },
+    "midgard.skald.idle.1": {
+      "x": 1,
+      "y": 163,
+      "w": 32,
+      "h": 48,
+      "pivotX": 16,
+      "pivotY": 47,
+      "animation": "midgard.skald.idle",
+      "animationIndex": 1
+    },
+    "midgard.skald.idle.2": {
+      "x": 34,
+      "y": 163,
+      "w": 32,
+      "h": 48,
+      "pivotX": 16,
+      "pivotY": 47,
+      "animation": "midgard.skald.idle",
+      "animationIndex": 2
+    },
+    "midgard.skald.idle.3": {
+      "x": 67,
+      "y": 163,
+      "w": 32,
+      "h": 48,
+      "pivotX": 16,
+      "pivotY": 47,
+      "animation": "midgard.skald.idle",
+      "animationIndex": 3
+    },
+    "midgard.bg.clouds": {
+      "x": 100,
+      "y": 163,
+      "w": 320,
+      "h": 40
+    },
+    "midgard.bg.ground": {
+      "x": 1,
+      "y": 212,
+      "w": 320,
+      "h": 40
+    },
+    "midgard.bg.near": {
+      "x": 1,
+      "y": 253,
+      "w": 320,
+      "h": 32
+    },
+    "midgard.palette.swatch": {
+      "x": 322,
+      "y": 253,
+      "w": 72,
+      "h": 8
+    },
+    "midgard.bg.particle": {
+      "x": 395,
+      "y": 253,
+      "w": 4,
+      "h": 4,
+      "pivotX": 2,
+      "pivotY": 2
+    }
+  }
+}

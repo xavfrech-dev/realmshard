@@ -1,0 +1,386 @@
+{
+ "board.minion": [
+  256,
+  310
+ ],
+ "board.minionLegend": [
+  256,
+  310
+ ],
+ "board.minionTaunt": [
+  256,
+  302
+ ],
+ "crest.legendary": [
+  180,
+  90
+ ],
+ "crest.wings": [
+  161,
+  49
+ ],
+ "frame.albion.minion": [
+  300,
+  420
+ ],
+ "frame.midgard.minion": [
+  300,
+  420
+ ],
+ "frame.hibernia.minion": [
+  300,
+  420
+ ],
+ "frame.neutral.minion": [
+  300,
+  420
+ ],
+ "frame.albion.spell": [
+  300,
+  420
+ ],
+ "frame.midgard.spell": [
+  300,
+  420
+ ],
+ "frame.hibernia.spell": [
+  300,
+  420
+ ],
+ "frame.neutral.spell": [
+  300,
+  420
+ ],
+ "frame.albion.weapon": [
+  300,
+  420
+ ],
+ "frame.midgard.weapon": [
+  300,
+  420
+ ],
+ "frame.hibernia.weapon": [
+  300,
+  420
+ ],
+ "frame.neutral.weapon": [
+  300,
+  420
+ ],
+ "hero.console": [
+  688,
+  384
+ ],
+ "hero.frame": [
+  256,
+  256
+ ],
+ "kit.arrow": [
+  42,
+  41
+ ],
+ "kit.arrowL": [
+  42,
+  41
+ ],
+ "kit.bannerBoss": [
+  673,
+  140
+ ],
+ "kit.bannerDark": [
+  675,
+  86
+ ],
+ "kit.bannerGold": [
+  670,
+  182
+ ],
+ "kit.bar": [
+  668,
+  80
+ ],
+ "kit.buttonRed": [
+  464,
+  109
+ ],
+ "kit.buttonGreen": [
+  464,
+  109
+ ],
+ "kit.buttonStone": [
+  464,
+  109
+ ],
+ "kit.check": [
+  30,
+  30
+ ],
+ "kit.checkbox": [
+  30,
+  30
+ ],
+ "kit.coin": [
+  28,
+  30
+ ],
+ "kit.coinBig": [
+  84,
+  87
+ ],
+ "kit.coinMoon": [
+  90,
+  92
+ ],
+ "kit.corner": [
+  57,
+  62
+ ],
+ "kit.corner.gold": [
+  57,
+  62
+ ],
+ "kit.corner.blue": [
+  57,
+  62
+ ],
+ "kit.corner.green": [
+  57,
+  62
+ ],
+ "kit.corner.purple": [
+  57,
+  62
+ ],
+ "kit.corner.orange": [
+  57,
+  62
+ ],
+ "kit.counter": [
+  667,
+  37
+ ],
+ "kit.cross": [
+  32,
+  31
+ ],
+ "kit.deck": [
+  61,
+  78
+ ],
+ "kit.divider": [
+  250,
+  30
+ ],
+ "kit.divider.gold": [
+  250,
+  30
+ ],
+ "kit.divider.blue": [
+  250,
+  30
+ ],
+ "kit.divider.green": [
+  250,
+  30
+ ],
+ "kit.divider.purple": [
+  250,
+  30
+ ],
+ "kit.divider.orange": [
+  250,
+  30
+ ],
+ "kit.endTurn": [
+  482,
+  129
+ ],
+ "kit.heroPower": [
+  89,
+  88
+ ],
+ "kit.intent": [
+  56,
+  20
+ ],
+ "kit.knob": [
+  28,
+  30
+ ],
+ "kit.logoPlate": [
+  674,
+  256
+ ],
+ "kit.medal": [
+  24,
+  42
+ ],
+ "kit.medalSilver": [
+  24,
+  42
+ ],
+ "kit.medalBronze": [
+  24,
+  42
+ ],
+ "kit.menuEntry": [
+  483,
+  119
+ ],
+ "kit.padlock": [
+  36,
+  46
+ ],
+ "kit.panelBlue": [
+  422,
+  295
+ ],
+ "kit.panelCrimson": [
+  422,
+  295
+ ],
+ "kit.panelEmerald": [
+  422,
+  295
+ ],
+ "kit.panelParch": [
+  422,
+  294
+ ],
+ "kit.plaque": [
+  675,
+  135
+ ],
+ "kit.potionSlot": [
+  42,
+  40
+ ],
+ "kit.priceTag": [
+  62,
+  30
+ ],
+ "kit.realmBanner": [
+  212,
+  364
+ ],
+ "kit.realmBanner.midgard": [
+  212,
+  364
+ ],
+ "kit.realmBanner.hibernia": [
+  212,
+  364
+ ],
+ "kit.realmBanner.neutral": [
+  212,
+  364
+ ],
+ "kit.ribbon": [
+  658,
+  105
+ ],
+ "kit.rope": [
+  199,
+  21
+ ],
+ "kit.slot": [
+  647,
+  184
+ ],
+ "kit.socket": [
+  32,
+  32
+ ],
+ "kit.speech": [
+  253,
+  189
+ ],
+ "kit.tab": [
+  482,
+  159
+ ],
+ "kit.thumb": [
+  18,
+  55
+ ],
+ "kit.tile": [
+  230,
+  226
+ ],
+ "kit.toast": [
+  482,
+  127
+ ],
+ "kit.toggle": [
+  58,
+  20
+ ],
+ "kit.toggleOn": [
+  58,
+  20
+ ],
+ "kit.toolbar": [
+  643,
+  87
+ ],
+ "kit.tooltip": [
+  193,
+  135
+ ],
+ "kit.trophy": [
+  42,
+  41
+ ],
+ "kit.well": [
+  491,
+  55
+ ],
+ "node.boss": [
+  62,
+  62
+ ],
+ "node.combat": [
+  60,
+  61
+ ],
+ "node.elite": [
+  63,
+  62
+ ],
+ "node.event": [
+  59,
+  63
+ ],
+ "node.rest": [
+  62,
+  63
+ ],
+ "node.shop": [
+  62,
+  64
+ ],
+ "node.treasure": [
+  58,
+  62
+ ],
+ "kit.panel": [
+  454,
+  314
+ ],
+ "kit.gem": [
+  68,
+  82
+ ],
+ "kit.gemSpent": [
+  68,
+  82
+ ],
+ "kit.gemLocked": [
+  68,
+  82
+ ],
+ "kit.avatar": [
+  112,
+  107
+ ]
+}
