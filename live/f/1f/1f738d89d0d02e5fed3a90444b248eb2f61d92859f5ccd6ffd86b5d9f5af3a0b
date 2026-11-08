@@ -1,1 +1,0 @@
-import{h6 as r}from"./index-DNf2rS3c.js";function u(t,d){const e=t.texture;if(!r(e))return;const o=()=>{e.off("update",n)},n=()=>{r(e)||e.frame.width<=1||(o(),t.off("destroyed",o),!t.destroyed&&t.texture===e&&d())};e.on("update",n),t.once("destroyed",o)}export{u as r};
