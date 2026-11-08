@@ -1,0 +1,1 @@
+import{hd as n}from"./index-DmlFWyZo.js";function u(t,r){const e=t.texture;if(!n(e))return;const o=()=>{e.off("update",d)},d=()=>{n(e)||e.frame.width<=1||(o(),t.off("destroyed",o),!t.destroyed&&t.texture===e&&r())};e.on("update",d),t.once("destroyed",o)}export{u as r};
