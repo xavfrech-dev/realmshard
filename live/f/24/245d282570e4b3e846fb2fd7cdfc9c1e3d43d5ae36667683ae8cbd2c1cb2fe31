@@ -1,0 +1,1 @@
+import{hE as c,dD as i,ag as m}from"./index-DdEqmA_D.js";import{e as s}from"./gearPerks-D8hb9K72.js";const l=["hp","armor","strength","thorns","regen","cards","mana","discount"];function d(o,r,t){if(!c("heroMode")||i(o).level<m)return!1;const n=s(r),a=s(t);return l.some(e=>(n[e]??0)!==(a[e]??0))}export{d as c};
